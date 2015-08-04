@@ -1,0 +1,2 @@
+drrobot_clinicrobot
+-DCATKIN_DEVEL_PREFIX=/home/drrobot1/test/devel -DCMAKE_INSTALL_PREFIX=/home/drrobot1/test/install -G Unix Makefiles
