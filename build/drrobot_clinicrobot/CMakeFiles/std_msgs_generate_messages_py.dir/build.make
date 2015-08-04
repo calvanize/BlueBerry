@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/drrobot1/test/src
+CMAKE_SOURCE_DIR = /home/drrobot1/github/BlueBerry/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/drrobot1/test/build
+CMAKE_BINARY_DIR = /home/drrobot1/github/BlueBerry/build
 
 # Utility rule file for std_msgs_generate_messages_py.
 
@@ -56,10 +56,10 @@ drrobot_clinicrobot/CMakeFiles/std_msgs_generate_messages_py.dir/build: std_msgs
 .PHONY : drrobot_clinicrobot/CMakeFiles/std_msgs_generate_messages_py.dir/build
 
 drrobot_clinicrobot/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
-	cd /home/drrobot1/test/build/drrobot_clinicrobot && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : drrobot_clinicrobot/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 
 drrobot_clinicrobot/CMakeFiles/std_msgs_generate_messages_py.dir/depend:
-	cd /home/drrobot1/test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/drrobot1/test/src /home/drrobot1/test/src/drrobot_clinicrobot /home/drrobot1/test/build /home/drrobot1/test/build/drrobot_clinicrobot /home/drrobot1/test/build/drrobot_clinicrobot/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/drrobot1/github/BlueBerry/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/drrobot1/github/BlueBerry/src /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot /home/drrobot1/github/BlueBerry/build /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/CMakeFiles/std_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : drrobot_clinicrobot/CMakeFiles/std_msgs_generate_messages_py.dir/depend
 

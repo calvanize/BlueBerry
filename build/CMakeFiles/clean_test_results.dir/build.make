@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/drrobot1/test/src
+CMAKE_SOURCE_DIR = /home/drrobot1/github/BlueBerry/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/drrobot1/test/build
+CMAKE_BINARY_DIR = /home/drrobot1/github/BlueBerry/build
 
 # Utility rule file for clean_test_results.
 
@@ -46,7 +46,7 @@ CMAKE_BINARY_DIR = /home/drrobot1/test/build
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/usr/bin/cmake -E remove_directory /home/drrobot1/test/build/test_results
+	/usr/bin/cmake -E remove_directory /home/drrobot1/github/BlueBerry/build/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make
@@ -61,6 +61,6 @@ CMakeFiles/clean_test_results.dir/clean:
 .PHONY : CMakeFiles/clean_test_results.dir/clean
 
 CMakeFiles/clean_test_results.dir/depend:
-	cd /home/drrobot1/test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/drrobot1/test/src /home/drrobot1/test/src /home/drrobot1/test/build /home/drrobot1/test/build /home/drrobot1/test/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/drrobot1/github/BlueBerry/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/drrobot1/github/BlueBerry/src /home/drrobot1/github/BlueBerry/src /home/drrobot1/github/BlueBerry/build /home/drrobot1/github/BlueBerry/build /home/drrobot1/github/BlueBerry/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean_test_results.dir/depend
 

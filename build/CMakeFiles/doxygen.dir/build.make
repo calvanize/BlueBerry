@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/drrobot1/test/src
+CMAKE_SOURCE_DIR = /home/drrobot1/github/BlueBerry/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/drrobot1/test/build
+CMAKE_BINARY_DIR = /home/drrobot1/github/BlueBerry/build
 
 # Utility rule file for doxygen.
 
@@ -60,6 +60,6 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
-	cd /home/drrobot1/test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/drrobot1/test/src /home/drrobot1/test/src /home/drrobot1/test/build /home/drrobot1/test/build /home/drrobot1/test/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/drrobot1/github/BlueBerry/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/drrobot1/github/BlueBerry/src /home/drrobot1/github/BlueBerry/src /home/drrobot1/github/BlueBerry/build /home/drrobot1/github/BlueBerry/build /home/drrobot1/github/BlueBerry/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doxygen.dir/depend
 

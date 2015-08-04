@@ -1,8 +1,8 @@
-# Install script for directory: /home/drrobot1/test/src/drrobot_clinicrobot
+# Install script for directory: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/drrobot1/test/install")
+  SET(CMAKE_INSTALL_PREFIX "/home/drrobot1/github/BlueBerry/install")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,58 +34,58 @@ ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/drrobot_clinicrobot/msg" TYPE FILE FILES
-    "/home/drrobot1/test/src/drrobot_clinicrobot/msg/BumpSensor.msg"
-    "/home/drrobot1/test/src/drrobot_clinicrobot/msg/IndoorGPS.msg"
-    "/home/drrobot1/test/src/drrobot_clinicrobot/msg/LaserDriveData.msg"
-    "/home/drrobot1/test/src/drrobot_clinicrobot/msg/MotorInfo.msg"
-    "/home/drrobot1/test/src/drrobot_clinicrobot/msg/MotorInfoArray.msg"
-    "/home/drrobot1/test/src/drrobot_clinicrobot/msg/PowerInfo.msg"
-    "/home/drrobot1/test/src/drrobot_clinicrobot/msg/Range.msg"
-    "/home/drrobot1/test/src/drrobot_clinicrobot/msg/RangeArray.msg"
-    "/home/drrobot1/test/src/drrobot_clinicrobot/msg/RobotPosition.msg"
-    "/home/drrobot1/test/src/drrobot_clinicrobot/msg/MotorCmd.msg"
-    "/home/drrobot1/test/src/drrobot_clinicrobot/msg/RobotSystemData.msg"
-    "/home/drrobot1/test/src/drrobot_clinicrobot/msg/LaserDriveCmd.msg"
-    "/home/drrobot1/test/src/drrobot_clinicrobot/msg/HeadCmd.msg"
+    "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/BumpSensor.msg"
+    "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/IndoorGPS.msg"
+    "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/LaserDriveData.msg"
+    "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/MotorInfo.msg"
+    "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/MotorInfoArray.msg"
+    "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/PowerInfo.msg"
+    "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/Range.msg"
+    "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/RangeArray.msg"
+    "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/RobotPosition.msg"
+    "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/MotorCmd.msg"
+    "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/RobotSystemData.msg"
+    "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/LaserDriveCmd.msg"
+    "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/HeadCmd.msg"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/drrobot_clinicrobot/cmake" TYPE FILE FILES "/home/drrobot1/test/build/drrobot_clinicrobot/catkin_generated/installspace/drrobot_clinicrobot-msg-paths.cmake")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/drrobot_clinicrobot/cmake" TYPE FILE FILES "/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/catkin_generated/installspace/drrobot_clinicrobot-msg-paths.cmake")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/drrobot1/test/devel/include/drrobot_clinicrobot")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/drrobot1/github/BlueBerry/devel/include/drrobot_clinicrobot")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/drrobot1/test/devel/share/common-lisp/ros/drrobot_clinicrobot")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/drrobot1/test/devel/lib/python2.7/dist-packages/drrobot_clinicrobot")
+  execute_process(COMMAND "/usr/bin/python" -m compileall "/home/drrobot1/github/BlueBerry/devel/lib/python2.7/dist-packages/drrobot_clinicrobot")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/drrobot1/test/devel/lib/python2.7/dist-packages/drrobot_clinicrobot")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/drrobot1/github/BlueBerry/devel/lib/python2.7/dist-packages/drrobot_clinicrobot")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/drrobot1/test/build/drrobot_clinicrobot/catkin_generated/installspace/drrobot_clinicrobot.pc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/catkin_generated/installspace/drrobot_clinicrobot.pc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/drrobot_clinicrobot/cmake" TYPE FILE FILES "/home/drrobot1/test/build/drrobot_clinicrobot/catkin_generated/installspace/drrobot_clinicrobot-msg-extras.cmake")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/drrobot_clinicrobot/cmake" TYPE FILE FILES "/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/catkin_generated/installspace/drrobot_clinicrobot-msg-extras.cmake")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/drrobot_clinicrobot/cmake" TYPE FILE FILES
-    "/home/drrobot1/test/build/drrobot_clinicrobot/catkin_generated/installspace/drrobot_clinicrobotConfig.cmake"
-    "/home/drrobot1/test/build/drrobot_clinicrobot/catkin_generated/installspace/drrobot_clinicrobotConfig-version.cmake"
+    "/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/catkin_generated/installspace/drrobot_clinicrobotConfig.cmake"
+    "/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/catkin_generated/installspace/drrobot_clinicrobotConfig-version.cmake"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/drrobot_clinicrobot" TYPE FILE FILES "/home/drrobot1/test/src/drrobot_clinicrobot/package.xml")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/drrobot_clinicrobot" TYPE FILE FILES "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/package.xml")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

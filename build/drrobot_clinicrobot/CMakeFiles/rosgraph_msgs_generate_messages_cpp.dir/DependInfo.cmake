@@ -21,7 +21,7 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
-  "/home/drrobot1/test/devel/include"
+  "/home/drrobot1/github/BlueBerry/devel/include"
   "/usr/include/qt4"
   "/usr/include/qt4/QtGui"
   "/usr/include/qt4/QtXml"

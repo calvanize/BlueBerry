@@ -1,8 +1,8 @@
-prefix=/home/drrobot1/test/install
+prefix=/home/drrobot1/github/BlueBerry/install
 
 Name: drrobot_clinicrobot
 Description: Description of drrobot_clinicrobot
 Version: 1.0.1
-Cflags: -I/home/drrobot1/test/install/include
-Libs: -L/home/drrobot1/test/install/lib 
+Cflags: -I/home/drrobot1/github/BlueBerry/install/include
+Libs: -L/home/drrobot1/github/BlueBerry/install/lib 
 Requires: roscpp rospy std_msgs message_runtime

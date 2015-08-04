@@ -67,14 +67,14 @@ set(drrobot_clinicrobot_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(drrobot_clinicrobot_SOURCE_PREFIX /home/drrobot1/test/src/drrobot_clinicrobot)
-  set(drrobot_clinicrobot_DEVEL_PREFIX /home/drrobot1/test/devel)
+  set(drrobot_clinicrobot_SOURCE_PREFIX /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot)
+  set(drrobot_clinicrobot_DEVEL_PREFIX /home/drrobot1/github/BlueBerry/devel)
   set(drrobot_clinicrobot_INSTALL_PREFIX "")
   set(drrobot_clinicrobot_PREFIX ${drrobot_clinicrobot_DEVEL_PREFIX})
 else()
   set(drrobot_clinicrobot_SOURCE_PREFIX "")
   set(drrobot_clinicrobot_DEVEL_PREFIX "")
-  set(drrobot_clinicrobot_INSTALL_PREFIX /home/drrobot1/test/install)
+  set(drrobot_clinicrobot_INSTALL_PREFIX /home/drrobot1/github/BlueBerry/install)
   set(drrobot_clinicrobot_PREFIX ${drrobot_clinicrobot_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(drrobot_clinicrobot_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/drrobot1/test/devel/include;/home/drrobot1/test/src/drrobot_clinicrobot/include " STREQUAL " ")
+if(NOT "/home/drrobot1/github/BlueBerry/devel/include;/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include " STREQUAL " ")
   set(drrobot_clinicrobot_INCLUDE_DIRS "")
-  set(_include_dirs "/home/drrobot1/test/devel/include;/home/drrobot1/test/src/drrobot_clinicrobot/include")
+  set(_include_dirs "/home/drrobot1/github/BlueBerry/devel/include;/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include")
   foreach(idir ${_include_dirs})
     if(IS_ABSOLUTE ${idir} AND IS_DIRECTORY ${idir})
       set(include ${idir})
@@ -103,7 +103,7 @@ if(NOT "/home/drrobot1/test/devel/include;/home/drrobot1/test/src/drrobot_clinic
         message(FATAL_ERROR "Project 'drrobot_clinicrobot' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  Ask the maintainer 'drrobot1 <info@drrobot.com>' to fix it.")
       endif()
     else()
-      message(FATAL_ERROR "Project 'drrobot_clinicrobot' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/drrobot1/test/src/drrobot_clinicrobot/${idir}'.  Ask the maintainer 'drrobot1 <info@drrobot.com>' to fix it.")
+      message(FATAL_ERROR "Project 'drrobot_clinicrobot' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/${idir}'.  Ask the maintainer 'drrobot1 <info@drrobot.com>' to fix it.")
     endif()
     _list_append_unique(drrobot_clinicrobot_INCLUDE_DIRS ${include})
   endforeach()
@@ -122,7 +122,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/drrobot1/test/devel/lib;/home/drrobot1/catkin_ws/devel/lib;/opt/ros/indigo/lib)
+    foreach(path /home/drrobot1/github/BlueBerry/devel/lib;/opt/ros/indigo/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
