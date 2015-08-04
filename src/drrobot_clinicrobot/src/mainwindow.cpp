@@ -390,8 +390,11 @@ void MainWindow::iniSystemData()
         sensorMapConfig.UsConfigData[4].Weight = 1;
         usData[5].offsetX = -0.05;
         usData[5].offsetY = 0;
-        usData[5].offsetZ = 1.3;
-        usData[5].detectZ = 1.3;
+
+        // calvin changed it from 1.3 to 0.7
+        usData[5].offsetZ = 0.7;
+        usData[5].detectZ = 0.7;
+        // calvin ends
         usData[5].angle = -M_PI;
         sensorMapConfig.UsConfigData[5].Angle = -180;
         sensorMapConfig.UsConfigData[5].DisTag = 1;

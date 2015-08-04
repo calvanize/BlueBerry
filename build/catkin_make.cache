@@ -1,2 +1,2 @@
-drrobot_clinicrobot
+drrobot_clinicrobot:robot_setup_tf
 -DCATKIN_DEVEL_PREFIX=/home/drrobot1/github/BlueBerry/devel -DCMAKE_INSTALL_PREFIX=/home/drrobot1/github/BlueBerry/install -G Unix Makefiles
