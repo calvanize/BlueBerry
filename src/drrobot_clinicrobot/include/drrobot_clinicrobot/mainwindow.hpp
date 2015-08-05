@@ -76,6 +76,10 @@ private:
     double angle2PI(double tempAngle);
     double anglePI(double tempAngle);
 
+    //calvin code: function for robot velocity estimate
+    void robotEstVel();
+    //calvin end here
+
     //functions & var for laser scan drive motor
     void dealWithLaserDrivePackage(QString revData);
     int laserDriveFlag;
@@ -111,6 +115,10 @@ private:
     DrRobotSensorMapBuilder drrobotSensorMapBuilder;
     SensorMapData sensorMapData;
     RobotPosition robotPosition;
+
+    //calvin added these for velocity estimate
+    RobotVelocity robotvelocity;
+    //calvin ends
 
     SensorData sensorData;
     MotorControlCmd motorCmd;

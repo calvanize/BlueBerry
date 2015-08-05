@@ -59,6 +59,22 @@ class RobotPosition
         }
 };
 
+//calvin added these codes for velocity estimate
+class RobotVelocity
+{
+public :
+    double velocityX;
+    double velocityY;
+    double velocityAng;
+    void setRobotVelocity()
+    {
+        velocityX = 0;
+        velocityY = 0;
+        velocityAng = 0;
+    }
+};
+//calvin ends here
+
 class SensorMapData
 {
     public:
