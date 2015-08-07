@@ -2601,10 +2601,10 @@ void MainWindow::displayP2PCtrlMethod()
 void MainWindow::ReadSettings() {
 
     QSettings settings("Qt-Ros Package", "drrobot_clinicrobot");
-    QString robot_url1 = settings.value("robot_url1",QString("http://192.168.0.60")).toString();
+    QString robot_url1 = settings.value("robot_url1",QString("http://192.168.0.65")).toString();
     QString robot_port1 = settings.value("robot_port1", QString("10001")).toString();
     QString robot_port2 = settings.value("robot_port2", QString("10002")).toString();
-    QString robot_url2 = settings.value("robot_url2",QString("http://192.168.0.61")).toString();
+    QString robot_url2 = settings.value("robot_url2",QString("http://192.168.0.66")).toString();
     QString robot_port3 = settings.value("robot_port3", QString("10001")).toString();
     QString robot_port4 = settings.value("robot_port4", QString("10002")).toString();
     ui->lineEditNetworkIP1->setText(robot_url1);

@@ -1,0 +1,31 @@
+(cl:defpackage drrobot_clinicrobot-msg
+  (:use )
+  (:export
+   "<ROBOTPOSITION>"
+   "ROBOTPOSITION"
+   "<MOTORCMD>"
+   "MOTORCMD"
+   "<INDOORGPS>"
+   "INDOORGPS"
+   "<HEADCMD>"
+   "HEADCMD"
+   "<ROBOTSYSTEMDATA>"
+   "ROBOTSYSTEMDATA"
+   "<BUMPSENSOR>"
+   "BUMPSENSOR"
+   "<MOTORINFOARRAY>"
+   "MOTORINFOARRAY"
+   "<RANGE>"
+   "RANGE"
+   "<RANGEARRAY>"
+   "RANGEARRAY"
+   "<LASERDRIVECMD>"
+   "LASERDRIVECMD"
+   "<MOTORINFO>"
+   "MOTORINFO"
+   "<POWERINFO>"
+   "POWERINFO"
+   "<LASERDRIVEDATA>"
+   "LASERDRIVEDATA"
+  ))
+

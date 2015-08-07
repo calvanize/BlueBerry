@@ -251,7 +251,7 @@ void DrRobotP2PSpeedDrive::ctrlTimeEvent()
                                         } while (!((sensorMapData.Polar_Bin_Map[cycleindex(sectionNum + opensectiondistance + sign(opensectiondistance) * i)] == 1) || (i >= cSectionRange)));
 
                                         //calvin added these codes
-                                        if (i < p2pCAParameter.MinOpenTH)
+                                        if (i > p2pCAParameter.MinOpenTH)
                                         {
 
 
