@@ -1,8 +1,0 @@
-prefix=/home/drrobot1/github/BlueBerry/devel
-
-Name: drrobot_clinicrobot
-Description: Description of drrobot_clinicrobot
-Version: 1.0.1
-Cflags: -I/home/drrobot1/github/BlueBerry/devel/include -I/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include
-Libs: -L/home/drrobot1/github/BlueBerry/devel/lib 
-Requires: roscpp rospy std_msgs message_runtime
