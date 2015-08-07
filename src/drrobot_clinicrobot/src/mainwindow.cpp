@@ -119,6 +119,10 @@ serverFace = new QTcpServer(this);
     sensorMapData.setSensorMapData();
     robotPosition.setRobotPosition();
 
+    //calvin added these for robot velocity
+    robotvelocity.setRobotVelocity();
+    //calvin ends
+
     drrobotSensorMapBuilder.ConfigSensor(sensorMapConfig);
     drrobotSensorMapBuilder.PreSetPosition(robotPosition);
     sensorData.setSensorData();
@@ -229,6 +233,9 @@ void MainWindow::p2pStop()
 void MainWindow:: updateSensorMap(SensorMapData mapData)
 {
     sensorMapData = mapData;
+    //calvin added this to update the sensormap
+    drrobotp2pSpeedDrive.UpdateSensorMap_Position(robotPosition,sensorMapData);
+    //calvin ends
 }
 
 void MainWindow::p2pUpdateMotorCmd(MotorControlCmd cmd)
@@ -1171,6 +1178,10 @@ void MainWindow::dealWithPackage(const char *dataPoint, int len)
             else{
                 motorData[1].encoderDir = -1;
             }
+            //calvin codes here, estimate velocity
+            robotEstVel();
+            //calvin end
+
 
             // now current feedback, we used it as IR range input
             adValue = (int)((unsigned char)*(dataPoint + DATAPOS + 14))* 256 + (unsigned char)*(dataPoint + DATAPOS + 13);
@@ -2890,6 +2901,16 @@ bool MainWindow::event(QEvent *event)
    }
    else
    return QMainWindow::event(event);
+}
+
+void MainWindow::robotEstVel()
+{
+    if(-motorData[0].encoderDir + motorData[1].encoderDir == 1)
+        robotvelocity.velocityAng = 0;
+    else
+        robotvelocity.velocityAng = M_PI;
+
+    robotvelocity.velocityX = -motorData[0].encoderDir*motorData[0].encoderVel+ motorData[1].encoderDir*motorData[1].encoderVel;
 }
 
 

@@ -10,7 +10,11 @@
 export CMAKE_PREFIX_PATH="/home/drrobot1/github/BlueBerry/devel:$CMAKE_PREFIX_PATH"
 export CPATH="/home/drrobot1/github/BlueBerry/devel/include:$CPATH"
 export LD_LIBRARY_PATH="/home/drrobot1/github/BlueBerry/devel/lib:/home/drrobot1/github/BlueBerry/devel/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH"
+<<<<<<< HEAD
 export PATH="/home/drrobot1/github/BlueBerry/devel/bin:/home/drrobot1/catkin_ws/devel/bin:/opt/ros/indigo/bin:/opt/Qt5.3.2/5.3/gcc_64/bin:/usr/bin:/opt/Qt5.3.2/Tools/QtCreator/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+=======
+export PATH="/home/drrobot1/github/BlueBerry/devel/bin:/home/drrobot1/catkin_ws/devel/bin:/opt/ros/indigo/bin:/home/drrobot1/Qt/5.4/gcc_64/bin:/usr/bin:/home/drrobot1/Qt/Tools/QtCreator/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+>>>>>>> 1ee1804f64f5bc67a5b9e745e8e1c61837c0720f
 export PKG_CONFIG_PATH="/home/drrobot1/github/BlueBerry/devel/lib/pkgconfig:/home/drrobot1/github/BlueBerry/devel/lib/x86_64-linux-gnu/pkgconfig:$PKG_CONFIG_PATH"
 export PWD="/home/drrobot1/github/BlueBerry/build"
 export PYTHONPATH="/home/drrobot1/github/BlueBerry/devel/lib/python2.7/dist-packages:$PYTHONPATH"
