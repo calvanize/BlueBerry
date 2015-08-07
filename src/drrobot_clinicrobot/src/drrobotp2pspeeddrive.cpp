@@ -238,6 +238,9 @@ void DrRobotP2PSpeedDrive::ctrlTimeEvent()
                                         p2pServiceStatus = P2PCAStuck;
                                         emit p2pDriveCmdCallback(motorCmd);
 
+                                        //calvin added this
+                                        tempP2PStatus = P2PCAStuck;
+                                        //calvin end
                                     }
                                     else
                                     {
@@ -246,6 +249,10 @@ void DrRobotP2PSpeedDrive::ctrlTimeEvent()
                                         {
                                             i = i + 1;
                                         } while (!((sensorMapData.Polar_Bin_Map[cycleindex(sectionNum + opensectiondistance + sign(opensectiondistance) * i)] == 1) || (i >= cSectionRange)));
+
+                                        //calvin added these codes
+                                        if (i < p2pCAParameter.MinOpenTH)
+                                        {
 
 
                                         if (i > 11)
@@ -257,6 +264,21 @@ void DrRobotP2PSpeedDrive::ctrlTimeEvent()
                                         correcteddirection = (double)(cycleindex(sectionNum + opensectiondistance + sign(opensectiondistance) * i)) * 360 / (double)cSectionRange - 180;          // -0.5
 
                                         P2PAngle = (correcteddirection) / 180.0 * M_PI;
+                                        } //added by calvin
+                                        else
+                                        {
+                                            //opening too small
+                                            motorCmd.LeftWheelCmd = 0;
+                                            motorCmd.RightWheelCmd = 0;
+                                            motorCmd.p2pDriveMethod = SpeedControl;
+                                            motorCmd.p2pDriveStatus = P2PCAStuck;
+                                            p2pServiceStatus = P2PCAStuck;
+                                            emit p2pDriveCmdCallback(motorCmd);
+
+                                            //calvin added this
+                                            tempP2PStatus = P2PCAStuck;
+                                        }
+                                        //calvin ends here
                                     }
                                 }
                                 else //lie on opening
@@ -321,6 +343,7 @@ void DrRobotP2PSpeedDrive::ctrlTimeEvent()
                                             }
                                             else
                                             {
+                                                //opening too small comment added by calvin..not the code below
 
                                                     motorCmd.LeftWheelCmd = 0;
                                                     motorCmd.RightWheelCmd = 0;
@@ -328,6 +351,10 @@ void DrRobotP2PSpeedDrive::ctrlTimeEvent()
                                                     motorCmd.p2pDriveStatus = P2PCAStuck;
                                                     p2pServiceStatus = P2PCAStuck;
                                                     emit p2pDriveCmdCallback(motorCmd);
+
+                                                    //calvin added this
+                                                    tempP2PStatus = P2PCAStuck;
+                                                    //calvin end
 
                                             }
                                         }
@@ -383,6 +410,9 @@ void DrRobotP2PSpeedDrive::ctrlTimeEvent()
                             carW = (fabs(carW) < _pointSet.MaxTurnSpeed ? carW : _pointSet.MaxTurnSpeed * sign(carW));
 
                             carV = KV_w * _pointSet.ForwardSpeed;
+                            //calvin added this
+                            //carV = (fabs(carV) < p2pDriveParameter.MinForwardSpeed ? sign(carV) * p2pDriveParameter.MinForwardSpeed : carV);
+                            //calvin ends
 
                             if (_pointSet.CAEnable)             // 1: CAEnable: speed control,
                             {

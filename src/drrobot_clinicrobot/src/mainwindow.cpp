@@ -233,6 +233,9 @@ void MainWindow::p2pStop()
 void MainWindow:: updateSensorMap(SensorMapData mapData)
 {
     sensorMapData = mapData;
+    //calvin added this to update the sensormap
+    drrobotp2pSpeedDrive.UpdateSensorMap_Position(robotPosition,sensorMapData);
+    //calvin ends
 }
 
 void MainWindow::p2pUpdateMotorCmd(MotorControlCmd cmd)

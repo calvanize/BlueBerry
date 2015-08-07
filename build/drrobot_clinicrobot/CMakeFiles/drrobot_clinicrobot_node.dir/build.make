@@ -67,60 +67,60 @@ drrobot_clinicrobot/ui_mainwindow.h: /home/drrobot1/github/BlueBerry/src/drrobot
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_mainwindow.h"
 	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/lib/x86_64-linux-gnu/qt4/bin/uic -o /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/ui_mainwindow.h /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/ui/mainwindow.ui
 
-drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include/drrobot_clinicrobot/drrobotp2pdrive.hpp
+drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include/drrobot_clinicrobot/drrobotp2pspeeddrive.hpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx_parameters
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx_parameters
+
+drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include/drrobot_clinicrobot/drrobotsensordata.hpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/drrobot_clinicrobot/moc_drrobotsensordata.cxx"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx_parameters
 
 drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensormapbuild.cxx: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include/drrobot_clinicrobot/drrobotsensormapbuild.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/drrobot_clinicrobot/moc_drrobotsensormapbuild.cxx"
 	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensormapbuild.cxx_parameters
-
-drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include/drrobot_clinicrobot/ui_mainwindow.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/drrobot_clinicrobot/moc_ui_mainwindow.cxx"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx_parameters
 
 drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotprotocol.cxx: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include/drrobot_clinicrobot/drrobotprotocol.hpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/drrobot_clinicrobot/moc_drrobotprotocol.cxx"
 	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotprotocol.cxx_parameters
 
-drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include/drrobot_clinicrobot/ui_mainwindow_copy.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_7)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx_parameters
-
-drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include/drrobot_clinicrobot/drrobotsensormapbuildhelper.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_8)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx_parameters
-
 drrobot_clinicrobot/include/drrobot_clinicrobot/moc_mainwindow.cxx: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include/drrobot_clinicrobot/mainwindow.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/drrobot_clinicrobot/moc_mainwindow.cxx"
 	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_mainwindow.cxx_parameters
 
-drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include/drrobot_clinicrobot/drrobotsensordata.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_10)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/drrobot_clinicrobot/moc_drrobotsensordata.cxx"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx_parameters
+drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include/drrobot_clinicrobot/ui_mainwindow_copy.hpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx_parameters
 
-drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include/drrobot_clinicrobot/drrobotp2pspeeddrive.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_11)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx_parameters
+drrobot_clinicrobot/include/drrobot_clinicrobot/moc_qnode.cxx: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include/drrobot_clinicrobot/qnode.hpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/drrobot_clinicrobot/moc_qnode.cxx"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_qnode.cxx_parameters
+
+drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include/drrobot_clinicrobot/drrobotsensormapbuildhelper.hpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx_parameters
 
 drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotconst.cxx: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include/drrobot_clinicrobot/drrobotconst.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/drrobot_clinicrobot/moc_drrobotconst.cxx"
 	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotconst.cxx_parameters
 
-drrobot_clinicrobot/include/drrobot_clinicrobot/moc_qnode.cxx: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include/drrobot_clinicrobot/qnode.hpp
+drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include/drrobot_clinicrobot/ui_mainwindow.hpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/drrobot_clinicrobot/moc_ui_mainwindow.cxx"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx_parameters
+
+drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include/drrobot_clinicrobot/drrobotp2pdrive.hpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_13)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/drrobot_clinicrobot/moc_qnode.cxx"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_qnode.cxx_parameters
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx_parameters
 
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/main.cpp.o: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/flags.make
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/main.cpp.o: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/src/main.cpp
@@ -145,9 +145,55 @@ drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/main.cpp.o.provi
 
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/main.cpp.o.provides.build: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/main.cpp.o
 
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/flags.make
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/src/qnode.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o -c /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/src/qnode.cpp
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.i"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/src/qnode.cpp > CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.i
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.s"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/src/qnode.cpp -o CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.s
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o.requires:
+.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o.requires
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o.provides: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o.requires
+	$(MAKE) -f drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/build.make drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o.provides.build
+.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o.provides
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o.provides.build: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/flags.make
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/src/drrobotp2pspeeddrive.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o -c /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/src/drrobotp2pspeeddrive.cpp
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.i"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/src/drrobotp2pspeeddrive.cpp > CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.i
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.s"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/src/drrobotp2pspeeddrive.cpp -o CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.s
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o.requires:
+.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o.requires
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o.provides: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o.requires
+	$(MAKE) -f drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/build.make drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o.provides.build
+.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o.provides
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o.provides.build: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o
+
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/mainwindow.cpp.o: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/flags.make
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/mainwindow.cpp.o: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/src/mainwindow.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/mainwindow.cpp.o"
 	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/drrobot_clinicrobot_node.dir/src/mainwindow.cpp.o -c /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/src/mainwindow.cpp
 
@@ -170,7 +216,7 @@ drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/mainwindow.cpp.o
 
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrootsensormapbuild.cpp.o: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/flags.make
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrootsensormapbuild.cpp.o: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/src/drrootsensormapbuild.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrootsensormapbuild.cpp.o"
 	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/drrobot_clinicrobot_node.dir/src/drrootsensormapbuild.cpp.o -c /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/src/drrootsensormapbuild.cpp
 
@@ -190,52 +236,6 @@ drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrootsensormapb
 .PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrootsensormapbuild.cpp.o.provides
 
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrootsensormapbuild.cpp.o.provides.build: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrootsensormapbuild.cpp.o
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/flags.make
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/src/drrobotp2pspeeddrive.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_17)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o -c /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/src/drrobotp2pspeeddrive.cpp
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.i"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/src/drrobotp2pspeeddrive.cpp > CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.i
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.s"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/src/drrobotp2pspeeddrive.cpp -o CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.s
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o.requires:
-.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o.requires
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o.provides: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o.requires
-	$(MAKE) -f drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/build.make drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o.provides.build
-.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o.provides
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o.provides.build: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/flags.make
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/src/qnode.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_18)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o -c /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/src/qnode.cpp
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.i"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/src/qnode.cpp > CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.i
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.s"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/src/qnode.cpp -o CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.s
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o.requires:
-.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o.requires
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o.provides: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o.requires
-	$(MAKE) -f drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/build.make drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o.provides.build
-.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o.provides
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o.provides.build: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o
 
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/qrc_images.cxx.o: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/flags.make
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/qrc_images.cxx.o: drrobot_clinicrobot/qrc_images.cxx
@@ -260,32 +260,55 @@ drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/qrc_images.cxx.o.pro
 
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/qrc_images.cxx.o.provides.build: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/qrc_images.cxx.o
 
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/flags.make
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.o: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/flags.make
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.o: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_20)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o -c /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.o"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.o -c /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx
 
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.i"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx > CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.i
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.i"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx > CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.i
 
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.s"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.s
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.s"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.s
 
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o.requires:
-.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o.requires
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.o.requires:
+.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.o.requires
 
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o.provides: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o.requires
-	$(MAKE) -f drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/build.make drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o.provides.build
-.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o.provides
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.o.provides: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.o.requires
+	$(MAKE) -f drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/build.make drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.o.provides.build
+.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.o.provides
 
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o.provides.build: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.o.provides.build: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.o
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/flags.make
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_21)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o -c /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.i"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx > CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.i
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.s"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.s
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o.requires:
+.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o.requires
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o.provides: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o.requires
+	$(MAKE) -f drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/build.make drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o.provides.build
+.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o.provides
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o.provides.build: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o
 
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuild.cxx.o: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/flags.make
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuild.cxx.o: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensormapbuild.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuild.cxx.o"
 	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuild.cxx.o -c /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensormapbuild.cxx
 
@@ -305,29 +328,6 @@ drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clin
 .PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuild.cxx.o.provides
 
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuild.cxx.o.provides.build: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuild.cxx.o
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/flags.make
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_22)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o -c /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.i"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx > CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.i
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.s"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.s
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o.requires:
-.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o.requires
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o.provides: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o.requires
-	$(MAKE) -f drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/build.make drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o.provides.build
-.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o.provides
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o.provides.build: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o
 
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotprotocol.cxx.o: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/flags.make
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotprotocol.cxx.o: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotprotocol.cxx
@@ -352,55 +352,9 @@ drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clin
 
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotprotocol.cxx.o.provides.build: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotprotocol.cxx.o
 
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/flags.make
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_24)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o -c /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.i"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx > CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.i
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.s"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.s
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o.requires:
-.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o.requires
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o.provides: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o.requires
-	$(MAKE) -f drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/build.make drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o.provides.build
-.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o.provides
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o.provides.build: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/flags.make
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_25)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o -c /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.i"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx > CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.i
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.s"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.s
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o.requires:
-.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o.requires
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o.provides: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o.requires
-	$(MAKE) -f drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/build.make drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o.provides.build
-.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o.provides
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o.provides.build: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o
-
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_mainwindow.cxx.o: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/flags.make
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_mainwindow.cxx.o: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_mainwindow.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_26)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_24)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_mainwindow.cxx.o"
 	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_mainwindow.cxx.o -c /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_mainwindow.cxx
 
@@ -421,78 +375,32 @@ drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clin
 
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_mainwindow.cxx.o.provides.build: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_mainwindow.cxx.o
 
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/flags.make
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_27)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o -c /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/flags.make
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_25)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o -c /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx
 
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.i"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx > CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.i
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.i"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx > CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.i
 
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.s"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.s
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.s"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.s
 
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o.requires:
-.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o.requires
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o.requires:
+.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o.requires
 
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o.provides: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o.requires
-	$(MAKE) -f drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/build.make drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o.provides.build
-.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o.provides
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o.provides: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o.requires
+	$(MAKE) -f drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/build.make drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o.provides.build
+.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o.provides
 
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o.provides.build: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.o: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/flags.make
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.o: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_28)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.o"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.o -c /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.i"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx > CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.i
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.s"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.s
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.o.requires:
-.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.o.requires
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.o.provides: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.o.requires
-	$(MAKE) -f drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/build.make drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.o.provides.build
-.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.o.provides
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.o.provides.build: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.o
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/flags.make
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotconst.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_29)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o -c /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotconst.cxx
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.i"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotconst.cxx > CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.i
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.s"
-	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotconst.cxx -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.s
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o.requires:
-.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o.requires
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o.provides: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o.requires
-	$(MAKE) -f drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/build.make drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o.provides.build
-.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o.provides
-
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o.provides.build: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o.provides.build: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o
 
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_qnode.cxx.o: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/flags.make
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_qnode.cxx.o: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_qnode.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_30)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_qnode.cxx.o"
 	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_qnode.cxx.o -c /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_qnode.cxx
 
@@ -513,46 +421,138 @@ drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clin
 
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_qnode.cxx.o.provides.build: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_qnode.cxx.o
 
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/flags.make
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_27)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o -c /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.i"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx > CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.i
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.s"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.s
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o.requires:
+.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o.requires
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o.provides: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o.requires
+	$(MAKE) -f drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/build.make drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o.provides.build
+.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o.provides
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o.provides.build: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/flags.make
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotconst.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_28)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o -c /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotconst.cxx
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.i"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotconst.cxx > CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.i
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.s"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotconst.cxx -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.s
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o.requires:
+.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o.requires
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o.provides: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o.requires
+	$(MAKE) -f drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/build.make drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o.provides.build
+.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o.provides
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o.provides.build: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/flags.make
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_29)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o -c /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.i"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx > CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.i
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.s"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.s
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o.requires:
+.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o.requires
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o.provides: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o.requires
+	$(MAKE) -f drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/build.make drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o.provides.build
+.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o.provides
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o.provides.build: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/flags.make
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_30)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o -c /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.i"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx > CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.i
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.s"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx -o CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.s
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o.requires:
+.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o.requires
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o.provides: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o.requires
+	$(MAKE) -f drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/build.make drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o.provides.build
+.PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o.provides
+
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o.provides.build: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o
+
 # Object files for target drrobot_clinicrobot_node
 drrobot_clinicrobot_node_OBJECTS = \
 "CMakeFiles/drrobot_clinicrobot_node.dir/src/main.cpp.o" \
+"CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o" \
+"CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o" \
 "CMakeFiles/drrobot_clinicrobot_node.dir/src/mainwindow.cpp.o" \
 "CMakeFiles/drrobot_clinicrobot_node.dir/src/drrootsensormapbuild.cpp.o" \
-"CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o" \
-"CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o" \
 "CMakeFiles/drrobot_clinicrobot_node.dir/qrc_images.cxx.o" \
-"CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o" \
-"CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuild.cxx.o" \
-"CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o" \
-"CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotprotocol.cxx.o" \
-"CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o" \
-"CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o" \
-"CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_mainwindow.cxx.o" \
-"CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o" \
 "CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.o" \
+"CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o" \
+"CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuild.cxx.o" \
+"CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotprotocol.cxx.o" \
+"CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_mainwindow.cxx.o" \
+"CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o" \
+"CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_qnode.cxx.o" \
+"CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o" \
 "CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o" \
-"CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_qnode.cxx.o"
+"CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o" \
+"CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o"
 
 # External object files for target drrobot_clinicrobot_node
 drrobot_clinicrobot_node_EXTERNAL_OBJECTS =
 
 /home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/main.cpp.o
+/home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o
+/home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o
 /home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/mainwindow.cpp.o
 /home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrootsensormapbuild.cpp.o
-/home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o
-/home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o
 /home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/qrc_images.cxx.o
-/home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o
-/home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuild.cxx.o
-/home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o
-/home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotprotocol.cxx.o
-/home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o
-/home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o
-/home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_mainwindow.cxx.o
-/home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o
 /home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.o
-/home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o
+/home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o
+/home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuild.cxx.o
+/home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotprotocol.cxx.o
+/home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_mainwindow.cxx.o
+/home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o
 /home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_qnode.cxx.o
+/home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o
+/home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o
+/home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o
+/home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o
 /home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/build.make
 /home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: /usr/lib/x86_64-linux-gnu/libQtGui.so
 /home/drrobot1/github/BlueBerry/devel/lib/drrobot_clinicrobot/drrobot_clinicrobot_node: /usr/lib/x86_64-linux-gnu/libQtXml.so
@@ -584,22 +584,22 @@ drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/build: /home/drrobot
 .PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/build
 
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/main.cpp.o.requires
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o.requires
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o.requires
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/mainwindow.cpp.o.requires
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrootsensormapbuild.cpp.o.requires
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/drrobotp2pspeeddrive.cpp.o.requires
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/src/qnode.cpp.o.requires
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/qrc_images.cxx.o.requires
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o.requires
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuild.cxx.o.requires
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o.requires
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotprotocol.cxx.o.requires
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o.requires
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o.requires
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_mainwindow.cxx.o.requires
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o.requires
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx.o.requires
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o.requires
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx.o.requires
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuild.cxx.o.requires
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotprotocol.cxx.o.requires
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_mainwindow.cxx.o.requires
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx.o.requires
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_qnode.cxx.o.requires
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx.o.requires
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotconst.cxx.o.requires
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx.o.requires
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires: drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx.o.requires
 .PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/requires
 
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/clean:
@@ -608,17 +608,17 @@ drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/clean:
 
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/depend: drrobot_clinicrobot/qrc_images.cxx
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/depend: drrobot_clinicrobot/ui_mainwindow.h
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/depend: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/depend: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensormapbuild.cxx
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/depend: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/depend: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotprotocol.cxx
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/depend: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/depend: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/depend: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_mainwindow.cxx
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/depend: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/depend: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx
-drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/depend: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotconst.cxx
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/depend: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/depend: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensormapbuild.cxx
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/depend: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotprotocol.cxx
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/depend: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_mainwindow.cxx
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/depend: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/depend: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_qnode.cxx
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/depend: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/depend: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotconst.cxx
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/depend: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/depend: drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx
 	cd /home/drrobot1/github/BlueBerry/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/drrobot1/github/BlueBerry/src /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot /home/drrobot1/github/BlueBerry/build /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_node.dir/depend
 
