@@ -25,7 +25,7 @@ int main(int argc, char** argv){
       broadcaster_laser.sendTransform(
                   tf::StampedTransform(
                       tf::Transform(tf::Quaternion(0, 0, 0, 1), tf::Vector3(0.18, 0.0, 0.35)),
-                      ros::Time::now(),"base_link", "base_laser"));
+                      ros::Time::now(),"base_link", "laser"));
       double angle;
 
       for (int i = 0; i < IR_NUM; i++){
