@@ -17,6 +17,8 @@ std_msgs/String.h
 /home/drrobot1/github/BlueBerry/src/robot_setup_tf/src/std_msgs/String.h
 sstream
 -
+drrobot_clinicrobot/LaserDriveData.h
+-
 
 /opt/ros/indigo/include/XmlRpcDecl.h
 ros/macros.h

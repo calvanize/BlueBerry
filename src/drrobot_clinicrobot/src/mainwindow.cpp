@@ -178,11 +178,17 @@ void MainWindow::setROSReceive()
         QObject::connect(&qnode, SIGNAL(wheelCmdUpdated(int,int,int)), this, SLOT(wheelCmdSend(int,int,int)));
         QObject::connect(&qnode, SIGNAL(headCmdUpdated(double,int,int,double,int,int)), this, SLOT(headCmdSend(double,int,int,double,int,int)));
         QObject::connect(&qnode, SIGNAL(laserCmdUpdated(double,int)), this, SLOT(laserCmdSend(double,int)));
+        //calvin added this
+        QObject::connect(&qnode, SIGNAL(laserScanUpdated(LaserSensorData, LaserConfigData)), this, SLOT(laserScanUpdate(LaserSensorData, LaserConfigData)));
+        //calvin end
     }
     else{
         QObject::disconnect(&qnode, SIGNAL(wheelCmdUpdated(int,int,int)), this, SLOT(wheelCmdSend(int,int,int)));
         QObject::disconnect(&qnode, SIGNAL(headCmdUpdated(double,int,int,double,int,int)), this, SLOT(headCmdSend(double,int,int,double,int,int)));
         QObject::disconnect(&qnode, SIGNAL(laserCmdUpdated(double,int)), this, SLOT(laserCmdSend(double,int)));
+        //calvin added this
+        QObject::disconnect(&qnode, SIGNAL(laserScanUpdated(LaserSensorData, LaserConfigData)), this, SLOT(laserScanUpdate(LaserSensorData, LaserConfigData)));
+        //calvin end
     }
 
 }
@@ -667,6 +673,10 @@ void MainWindow::ctrlFunc()
         qnode.publisherLaserDriveData(laserData);
         qnode.publisherPowerInfo(chargeData);
         //uncommenting stops here calvin
+
+        //calvin added this for odometry
+        qnode.publisherOdometry(robotPos,robotvelocity);
+        //calvin ends here
         if (ui->checkBoxDisROSMsg->isChecked()){
             ui->textEditROSMsg->append("Publish sensor data..");
             rosLineCnt++;
@@ -2912,6 +2922,18 @@ void MainWindow::robotEstVel()
 
     robotvelocity.velocityX = -motorData[0].encoderDir*motorData[0].encoderVel+ motorData[1].encoderDir*motorData[1].encoderVel;
 }
+
+void MainWindow::laserScanUpdated(LaserSensorData a, LaserConfigData b)
+{
+    LaserConfigData laserConfigData = b;
+    LaserSensorData laserSensorData = a;
+    drrobotSensorMapBuilder.SetLaserUse(true);
+    drrobotSensorMapBuilder.ConfigLaserSensor(laserConfigData);
+    drrobotSensorMapBuilder.UpdateLaserSensorInfo(laserSensorData);
+
+}
+
+//calvin ends
 
 
 }	//namespace- drrobot_clinicrobot

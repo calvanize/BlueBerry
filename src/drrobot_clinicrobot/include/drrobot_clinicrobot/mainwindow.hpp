@@ -163,6 +163,11 @@ private slots:
     //calvin keyboard command
     void keyboardMotionCtrl(bool);
     bool event(QEvent*);
+    //calvin ends
+
+    //calvin laser scan data
+    void laserScanUpdated(LaserSensorData, LaserConfigData);
+    //calvin ends
 
     //for laser scan drive
     void connectToLaserDrive();

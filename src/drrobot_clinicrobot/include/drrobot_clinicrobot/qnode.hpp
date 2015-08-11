@@ -17,6 +17,10 @@
 
 #include <ros/ros.h>
 #include <string>
+//calvin included this
+#include <sensor_msgs/LaserScan.h>
+#include "drrobotsensormapbuildhelper.hpp"
+//calvin end
 #include <QThread>
 #include <QStringListModel>
 #include <drrobot_clinicrobot/MotorCmd.h>
@@ -55,6 +59,9 @@ public:
     void publisherRangeArray(IRRangeData irRangeData[],USRangeData usRangeData[],int irnum,int usnum);
     void publisherMotorData(MotorData motorData[],int len);
     void publisherRobotSystemData(SystemData systemData);
+
+    //calvin added this for odometry
+    void publisherOdometry(RobotPositionData robotPositionData, RobotVelocity robotVelocity);
 	/*********************
 	** Logging
 	**********************/
@@ -75,6 +82,10 @@ signals:
     void wheelCmdUpdated(int,int,int);
     void headCmdUpdated(double,int,int,double,int,int);
     void laserCmdUpdated(double,int);
+    //calvin added this
+    void laserScanUpdated(LaserSensorData, LaserConfigData);
+    //calvin ends
+
 private:
 	int init_argc;
 	char** init_argv;
@@ -90,16 +101,27 @@ private:
     ros::Publisher rangeArray_pub_;
     ros::Publisher robotSystemData_pub_;
 
+    //calvin added these for odometry
+     ros::Publisher odom_pub_;
+     //calvin ends
+
 	ros::Subscriber motor_cmd_sub_;
     ros::Subscriber head_cmd_sub_;
     ros::Subscriber laser_cmd_sub_;
+
+    //calvin added this
+    ros::Subscriber laser_scan_sub_;
+    //calvin end
 
 	int msgCnt;
     	QStringListModel logging_model;
     void wheelCmdReceived(const drrobot_clinicrobot::MotorCmd::ConstPtr& cmd);
     void headCmdReceived(const drrobot_clinicrobot::HeadCmd::ConstPtr& cmd);
     void laserCmdReceived(const drrobot_clinicrobot::LaserDriveCmd::ConstPtr& cmd);
-    
+    //calvin added this
+    void lasersensorReceived(const sensor_msgs::LaserScan::ConstPtr& scan);
+    //calvin ends
+
 };
 
 }  // namespace drrobot_clinicrobot

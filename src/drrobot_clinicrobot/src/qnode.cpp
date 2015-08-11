@@ -15,6 +15,11 @@
 #include <string>
 #include <std_msgs/String.h>
 #include <sstream>
+//calvin included this
+#include <sensor_msgs/LaserScan.h>
+#include <nav_msgs/Odometry.h>
+#include <tf/transform_broadcaster.h>
+//calvin end
 #include "../include/drrobot_clinicrobot/qnode.hpp"
 #include "../include/drrobot_clinicrobot/drrobotsensordata.hpp"
 #include <drrobot_clinicrobot/MotorInfo.h>
@@ -73,6 +78,11 @@ bool QNode::init() {
     motor_cmd_sub_ = n.subscribe<drrobot_clinicrobot::MotorCmd>("drrobot_clinicrobot_motor_cmd", 1, boost::bind(&QNode::wheelCmdReceived, this, _1));
     head_cmd_sub_ = n.subscribe<drrobot_clinicrobot::HeadCmd>("drrobot_clinicrobot_head_cmd", 1, boost::bind(&QNode::headCmdReceived, this, _1));
     laser_cmd_sub_ = n.subscribe<drrobot_clinicrobot::LaserDriveCmd>("drrobot_clinicrobot_laserdrive_cmd", 1, boost::bind(&QNode::laserCmdReceived, this, _1));
+
+    //calvin added these codes
+    laser_scan_sub_ = n.subscribe<sensor_msgs::LaserScan>("scan", 1, boost::bind(&QNode::lasersensorReceived, this, _1));
+    odom_pub_ = n.advertise<nav_msgs::Odometry>("drrobot_clinicrobot_odometry", 1);
+    //calvin end
 
 
 	start();
@@ -277,6 +287,76 @@ void QNode::laserCmdReceived(const drrobot_clinicrobot::LaserDriveCmd::ConstPtr&
     emit laserCmdUpdated(tiltPos,autoScanFlag);
 
 }
+
+//calvin added this
+void QNode::lasersensorReceived(const sensor_msgs::LaserScan::ConstPtr& scan)
+{
+    LaserSensorData laserSensorData;
+    LaserConfigData laserConfigData;
+    laserSensorData.setLaserSensorData();
+    laserConfigData.setLaserConfigData();
+
+    laserConfigData.EndStep = (scan->angle_max-scan->angle_min)/scan->angle_increment + 1;
+    laserConfigData.LaserDataLen = (scan->angle_max-scan->angle_min)/scan->angle_increment + 1;
+    laserConfigData.AngleStep = scan->angle_increment;
+    laserConfigData.MaxDis = scan->range_max;
+    laserConfigData.MinDis = scan->range_min;
+    //laserconfigdata offset x and y will be provided in the mainwindow.
+    laserConfigData.StartAngle = scan->angle_min;
+
+    laserSensorData.TimeStamp = scan->header.stamp.toSec();
+    for (int i = laserConfigData.StartStep; i < laserConfigData.EndStep; i++)
+    {
+        laserSensorData.DisArrayData[i] = scan->ranges[i];
+    }
+
+    emit laserScanUpdated(laserSensorData, laserConfigData);
+}
+
+void QNode::publisherOdometry(RobotPositionData robotPositionData, RobotVelocity robotVelocity)
+{
+    tf::TransformBroadcaster odom_broadcaster;
+
+    //since all odometry is 6DOF we'll need a quaternion created from yaw
+       geometry_msgs::Quaternion odom_quat = tf::createQuaternionMsgFromYaw(robotPositionData.robotHeading);
+
+       //first, we'll publish the transform over tf
+       geometry_msgs::TransformStamped odom_trans;
+       odom_trans.header.stamp = ros::Time::now();
+       odom_trans.header.frame_id = "odom";
+       odom_trans.child_frame_id = "base_link";
+
+       odom_trans.transform.translation.x = robotPositionData.robotX;
+       odom_trans.transform.translation.y = robotPositionData.robotY;
+       odom_trans.transform.translation.z = 0.0;
+       odom_trans.transform.rotation = odom_quat;
+
+       //send the transform
+       odom_broadcaster.sendTransform(odom_trans);
+
+       //next, we'll publish the odometry message over ROS
+       nav_msgs::Odometry odom;
+       odom.header.stamp = ros::Time::now();
+       odom.header.frame_id = "odom";
+
+       //set the position
+       odom.pose.pose.position.x = robotPositionData.robotX;
+       odom.pose.pose.position.y = robotPositionData.robotY;
+       odom.pose.pose.position.z = 0.0;
+       odom.pose.pose.orientation = odom_quat;
+
+       //set the velocity
+       odom.child_frame_id = "base_link";
+       odom.twist.twist.linear.x = robotVelocity.velocityX;
+       odom.twist.twist.linear.y = robotVelocity.velocityY;
+       odom.twist.twist.angular.z = robotVelocity.velocityAng;
+
+       //publish the message
+       odom_pub_.publish(odom);
+
+}
+
+//calvin end
 
 void QNode::log( const LogLevel &level, const std::string &msg) {
 	logging_model.insertRows(logging_model.rowCount(),1);
