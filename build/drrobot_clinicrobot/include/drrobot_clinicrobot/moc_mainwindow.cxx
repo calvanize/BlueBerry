@@ -44,37 +44,37 @@ static const uint qt_meta_data_drrobot_clinicrobot__MainWindow[] = {
      236,   32,   32,   32, 0x08,
      251,   32,   32,   32, 0x08,
      281,   32,  276,   32, 0x08,
-     298,  296,   32,   32, 0x08,
-     348,   32,   32,   32, 0x08,
-     370,   32,   32,   32, 0x08,
-     394,   32,   32,   32, 0x08,
-     414,   32,   32,   32, 0x08,
-     433,   32,   32,   32, 0x08,
-     449,   32,   32,   32, 0x08,
-     467,   32,   32,   32, 0x08,
-     496,   32,   32,   32, 0x08,
-     516,   32,   32,   32, 0x08,
-     532,   32,   32,   32, 0x08,
-     553,   32,   32,   32, 0x08,
-     567,   32,   32,   32, 0x08,
-     588,   32,   32,   32, 0x08,
-     611,   32,   32,   32, 0x08,
-     622,   32,   32,   32, 0x08,
-     632,   32,   32,   32, 0x08,
-     652,   32,   32,   32, 0x08,
-     676,  670,   32,   32, 0x08,
-     697,  689,   32,   32, 0x08,
-     732,  728,   32,   32, 0x08,
-     767,   32,   32,   32, 0x08,
-     778,   32,   32,   32, 0x08,
-     788,   32,   32,   32, 0x08,
-     802,   32,   32,   32, 0x08,
-     819,   32,   32,   32, 0x08,
-     833,   32,   32,   32, 0x08,
-     877,  847,   32,   32, 0x08,
-     976,  903,   32,   32, 0x08,
-    1037, 1019,   32,   32, 0x08,
-    1062,   32,   32,   32, 0x08,
+     296,   32,   32,   32, 0x08,
+     322,   32,   32,   32, 0x08,
+     344,   32,   32,   32, 0x08,
+     368,   32,   32,   32, 0x08,
+     388,   32,   32,   32, 0x08,
+     407,   32,   32,   32, 0x08,
+     423,   32,   32,   32, 0x08,
+     441,   32,   32,   32, 0x08,
+     470,   32,   32,   32, 0x08,
+     490,   32,   32,   32, 0x08,
+     506,   32,   32,   32, 0x08,
+     527,   32,   32,   32, 0x08,
+     541,   32,   32,   32, 0x08,
+     562,   32,   32,   32, 0x08,
+     585,   32,   32,   32, 0x08,
+     596,   32,   32,   32, 0x08,
+     606,   32,   32,   32, 0x08,
+     626,   32,   32,   32, 0x08,
+     650,  644,   32,   32, 0x08,
+     671,  663,   32,   32, 0x08,
+     706,  702,   32,   32, 0x08,
+     741,   32,   32,   32, 0x08,
+     752,   32,   32,   32, 0x08,
+     762,   32,   32,   32, 0x08,
+     776,   32,   32,   32, 0x08,
+     793,   32,   32,   32, 0x08,
+     807,   32,   32,   32, 0x08,
+     851,  821,   32,   32, 0x08,
+     950,  877,   32,   32, 0x08,
+    1011,  993,   32,   32, 0x08,
+    1036,   32,   32,   32, 0x08,
 
        0        // eod
 };
@@ -88,8 +88,7 @@ static const char qt_meta_stringdata_drrobot_clinicrobot__MainWindow[] = {
     "sendHeadTiltCmd()\0sendHeadPanCmd()\0"
     "sendHeadStopCmd()\0resetHeadTilt()\0"
     "resetHeadPan()\0keyboardMotionCtrl(bool)\0"
-    "bool\0event(QEvent*)\0,\0"
-    "laserScanUpdated(LaserSensorData,LaserConfigData)\0"
+    "bool\0event(QEvent*)\0laserScanEffected(double)\0"
     "connectToLaserDrive()\0processLaserDriveData()\0"
     "sendLaserDriveCmd()\0setLaserAutoScan()\0"
     "laserAutoScan()\0laserResetDrive()\0"
@@ -133,7 +132,7 @@ void drrobot_clinicrobot::MainWindow::qt_static_metacall(QObject *_o, QMetaObjec
         case 12: _t->keyboardMotionCtrl((*reinterpret_cast< bool(*)>(_a[1]))); break;
         case 13: { bool _r = _t->event((*reinterpret_cast< QEvent*(*)>(_a[1])));
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = _r; }  break;
-        case 14: _t->laserScanUpdated((*reinterpret_cast< LaserSensorData(*)>(_a[1])),(*reinterpret_cast< LaserConfigData(*)>(_a[2]))); break;
+        case 14: _t->laserScanEffected((*reinterpret_cast< double(*)>(_a[1]))); break;
         case 15: _t->connectToLaserDrive(); break;
         case 16: _t->processLaserDriveData(); break;
         case 17: _t->sendLaserDriveCmd(); break;

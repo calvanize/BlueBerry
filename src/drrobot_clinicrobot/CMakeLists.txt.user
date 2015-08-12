@@ -1,33 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<<<<<<< HEAD
-<!-- Written by QtCreator 3.2.1, 2015-08-07T15:07:04. -->
-=======
-<<<<<<< HEAD
-<!-- Written by QtCreator 3.4.1, 2015-08-07T14:56:01. -->
-<qtcreator>
- <data>
-  <variable>EnvironmentId</variable>
-  <value type="QByteArray">{0f6f8a73-72f5-49f3-95ea-6345df9bd397}</value>
-=======
-<<<<<<< HEAD
-<!-- Written by QtCreator 3.2.1, 2015-08-05T14:36:45. -->
->>>>>>> c44e55e22faea5c4b6bea01259aa4dbb44983cc3
+<!-- Written by QtCreator 3.2.1, 2015-08-11T16:50:21. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
   <value type="QByteArray">{b38d7484-9774-45fe-af2d-b86b31bf9811}</value>
-<<<<<<< HEAD
-=======
-=======
-<!-- Written by QtCreator 3.4.2, 2015-08-05T16:18:38. -->
-<qtcreator>
- <data>
-  <variable>EnvironmentId</variable>
-  <value type="QByteArray">{f40a10dc-0871-4920-a188-3c6d0139740c}</value>
->>>>>>> 1ee1804f64f5bc67a5b9e745e8e1c61837c0720f
->>>>>>> 4d443863763ba238f871b6cae6cbc960eba2e845
->>>>>>> c44e55e22faea5c4b6bea01259aa4dbb44983cc3
  </data>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -81,27 +58,9 @@
  <data>
   <variable>ProjectExplorer.Project.Target.0</variable>
   <valuemap type="QVariantMap">
-<<<<<<< HEAD
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop Qt 5.3 GCC 64bit</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop Qt 5.3 GCC 64bit</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">qt.53.gcc_64_kit</value>
-=======
-<<<<<<< HEAD
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop Qt 5.4.2 GCC 64bit</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop Qt 5.4.2 GCC 64bit</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">qt.54.gcc_64_kit</value>
-=======
-<<<<<<< HEAD
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop Qt 5.3 GCC 64bit</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop Qt 5.3 GCC 64bit</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">qt.53.gcc_64_kit</value>
-=======
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop Qt 5.5.0 GCC 64bit</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop Qt 5.5.0 GCC 64bit</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">qt.55.gcc_64_kit</value>
->>>>>>> 1ee1804f64f5bc67a5b9e745e8e1c61837c0720f
->>>>>>> 4d443863763ba238f871b6cae6cbc960eba2e845
->>>>>>> c44e55e22faea5c4b6bea01259aa4dbb44983cc3
    <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>

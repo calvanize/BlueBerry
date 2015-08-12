@@ -38,6 +38,7 @@ int main(int argc, char** argv){
   while(n.ok()){
 
       ros::Subscriber laser_tf = n.subscribe("drrobot_clinicrobot_laserdrivedata",1000, setlasertf);
+      //laser_tf = n.subscribe<drrobot_clinicrobot::LaserDriveData>("drrobot_clinicrobot_laserdrivedata", 1000, setlasertf);
 
       double angle;
       for (int i = 0; i < IR_NUM; i++){
@@ -80,6 +81,7 @@ int main(int argc, char** argv){
                   tf::StampedTransform(
                       tf::Transform(tf::Quaternion(0, 0, 0, 1), tf::Vector3(-0.05, 0.0, 0.7)),
                       ros::Time::now(),"base_link", "base_USsensor5"));
+      //ros::spin();
 
       r.sleep();
 

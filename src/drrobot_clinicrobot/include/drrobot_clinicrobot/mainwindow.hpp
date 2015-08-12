@@ -166,7 +166,7 @@ private slots:
     //calvin ends
 
     //calvin laser scan data
-    void laserScanUpdated(LaserSensorData, LaserConfigData);
+    void laserScanEffected(double);
     //calvin ends
 
     //for laser scan drive

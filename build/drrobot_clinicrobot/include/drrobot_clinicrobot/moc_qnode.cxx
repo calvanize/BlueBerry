@@ -35,7 +35,7 @@ static const uint qt_meta_data_drrobot_clinicrobot__QNode[] = {
       62,   59,   27,   27, 0x05,
       97,   91,   27,   27, 0x05,
      145,  143,   27,   27, 0x05,
-     173,  143,   27,   27, 0x05,
+     173,   27,   27,   27, 0x05,
 
        0        // eod
 };
@@ -46,7 +46,7 @@ static const char qt_meta_stringdata_drrobot_clinicrobot__QNode[] = {
     "wheelCmdUpdated(int,int,int)\0,,,,,\0"
     "headCmdUpdated(double,int,int,double,int,int)\0"
     ",\0laserCmdUpdated(double,int)\0"
-    "laserScanUpdated(LaserSensorData,LaserConfigData)\0"
+    "laserScanUpdated(double)\0"
 };
 
 void drrobot_clinicrobot::QNode::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
@@ -60,7 +60,7 @@ void drrobot_clinicrobot::QNode::qt_static_metacall(QObject *_o, QMetaObject::Ca
         case 2: _t->wheelCmdUpdated((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3]))); break;
         case 3: _t->headCmdUpdated((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3])),(*reinterpret_cast< double(*)>(_a[4])),(*reinterpret_cast< int(*)>(_a[5])),(*reinterpret_cast< int(*)>(_a[6]))); break;
         case 4: _t->laserCmdUpdated((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
-        case 5: _t->laserScanUpdated((*reinterpret_cast< LaserSensorData(*)>(_a[1])),(*reinterpret_cast< LaserConfigData(*)>(_a[2]))); break;
+        case 5: _t->laserScanUpdated((*reinterpret_cast< double(*)>(_a[1]))); break;
         default: ;
         }
     }
@@ -139,9 +139,9 @@ void drrobot_clinicrobot::QNode::laserCmdUpdated(double _t1, int _t2)
 }
 
 // SIGNAL 5
-void drrobot_clinicrobot::QNode::laserScanUpdated(LaserSensorData _t1, LaserConfigData _t2)
+void drrobot_clinicrobot::QNode::laserScanUpdated(double _t1)
 {
-    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
+    void *_a[] = { 0, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 5, _a);
 }
 QT_END_MOC_NAMESPACE

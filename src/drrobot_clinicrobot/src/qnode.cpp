@@ -80,6 +80,7 @@ bool QNode::init() {
     laser_cmd_sub_ = n.subscribe<drrobot_clinicrobot::LaserDriveCmd>("drrobot_clinicrobot_laserdrive_cmd", 1, boost::bind(&QNode::laserCmdReceived, this, _1));
 
     //calvin added these codes
+    //laser_scan_sub_ = n.subscribe<sensor_msgs::LaserScan>("scan", 1000, &QNode::laserScanUpdated);
     laser_scan_sub_ = n.subscribe<sensor_msgs::LaserScan>("scan", 1, boost::bind(&QNode::lasersensorReceived, this, _1));
     odom_pub_ = n.advertise<nav_msgs::Odometry>("drrobot_clinicrobot_odometry", 1);
     //calvin end
@@ -304,13 +305,26 @@ void QNode::lasersensorReceived(const sensor_msgs::LaserScan::ConstPtr& scan)
     //laserconfigdata offset x and y will be provided in the mainwindow.
     laserConfigData.StartAngle = scan->angle_min;
 
+    //using just arrays
+    double laserconfig[6];
+    laserconfig[0] = laserConfigData.EndStep;
+    laserconfig[1] = laserConfigData.LaserDataLen;
+    laserconfig[2] = laserConfigData.AngleStep;
+    laserconfig[3] = laserConfigData.MaxDis;
+    laserconfig[4] = laserConfigData.MinDis;
+    laserconfig[5] = laserConfigData.StartAngle;
+
+    double laserdata[laserConfigData.LaserDataLen];
+
     laserSensorData.TimeStamp = scan->header.stamp.toSec();
+    double time = laserSensorData.TimeStamp;
     for (int i = laserConfigData.StartStep; i < laserConfigData.EndStep; i++)
     {
         laserSensorData.DisArrayData[i] = scan->ranges[i];
+        laserdata[i] = laserSensorData.DisArrayData[i];
     }
 
-    emit laserScanUpdated(laserSensorData, laserConfigData);
+    emit laserScanUpdated(time);
 }
 
 void QNode::publisherOdometry(RobotPositionData robotPositionData, RobotVelocity robotVelocity)

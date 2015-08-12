@@ -178,8 +178,8 @@ void MainWindow::setROSReceive()
         QObject::connect(&qnode, SIGNAL(wheelCmdUpdated(int,int,int)), this, SLOT(wheelCmdSend(int,int,int)));
         QObject::connect(&qnode, SIGNAL(headCmdUpdated(double,int,int,double,int,int)), this, SLOT(headCmdSend(double,int,int,double,int,int)));
         QObject::connect(&qnode, SIGNAL(laserCmdUpdated(double,int)), this, SLOT(laserCmdSend(double,int)));
-        //calvin added this
-        QObject::connect(&qnode, SIGNAL(laserScanUpdated(LaserSensorData, LaserConfigData)), this, SLOT(laserScanUpdate(LaserSensorData, LaserConfigData)));
+        //calvin added this       
+        QObject::connect(&qnode, SIGNAL(laserScanUpdated(double)),this, SLOT(laserScanEffected(double)));
         //calvin end
     }
     else{
@@ -187,7 +187,7 @@ void MainWindow::setROSReceive()
         QObject::disconnect(&qnode, SIGNAL(headCmdUpdated(double,int,int,double,int,int)), this, SLOT(headCmdSend(double,int,int,double,int,int)));
         QObject::disconnect(&qnode, SIGNAL(laserCmdUpdated(double,int)), this, SLOT(laserCmdSend(double,int)));
         //calvin added this
-        QObject::disconnect(&qnode, SIGNAL(laserScanUpdated(LaserSensorData, LaserConfigData)), this, SLOT(laserScanUpdate(LaserSensorData, LaserConfigData)));
+        QObject::disconnect(&qnode, SIGNAL(laserScanUpdated(double)), this, SLOT(laserScanEffected(double)));
         //calvin end
     }
 
@@ -2923,13 +2923,14 @@ void MainWindow::robotEstVel()
     robotvelocity.velocityX = -motorData[0].encoderDir*motorData[0].encoderVel+ motorData[1].encoderDir*motorData[1].encoderVel;
 }
 
-void MainWindow::laserScanUpdated(LaserSensorData a, LaserConfigData b)
+void MainWindow::laserScanEffected(double a)
 {
-    LaserConfigData laserConfigData = b;
-    LaserSensorData laserSensorData = a;
+
+   // LaserConfigData laserConfigData = b;
+    //LaserSensorData laserSensorData = a;
     drrobotSensorMapBuilder.SetLaserUse(true);
-    drrobotSensorMapBuilder.ConfigLaserSensor(laserConfigData);
-    drrobotSensorMapBuilder.UpdateLaserSensorInfo(laserSensorData);
+   // drrobotSensorMapBuilder.ConfigLaserSensor(laserConfigData);
+   // drrobotSensorMapBuilder.UpdateLaserSensorInfo(laserSensorData);
 
 }
 

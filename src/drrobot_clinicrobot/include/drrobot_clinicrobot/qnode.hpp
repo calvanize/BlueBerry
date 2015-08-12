@@ -83,7 +83,7 @@ signals:
     void headCmdUpdated(double,int,int,double,int,int);
     void laserCmdUpdated(double,int);
     //calvin added this
-    void laserScanUpdated(LaserSensorData, LaserConfigData);
+    void laserScanUpdated(double);
     //calvin ends
 
 private:
