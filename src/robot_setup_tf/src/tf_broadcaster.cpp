@@ -1,7 +1,7 @@
 #include <ros/ros.h>
 #include <tf/transform_broadcaster.h>
 #include <string>
-#include "std_msgs/String.h"
+#include <std_msgs/String.h>
 #include <sstream>
 #include <drrobot_clinicrobot/LaserDriveData.h>
 //#include  "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include/drrobot_clinicrobot/drrobotprotocol.hpp"
@@ -12,13 +12,13 @@
 #define SENSOR_R    0.25
 #define SENSOR_ANGLE_STEP 22.5      // 16 sensor one circle(360)
 
-void setlasertf(const drrobot_clinicrobot::LaserDriveData& laserData)
+void setlasertf(const drrobot_clinicrobot::LaserDriveDataConstPtr laserData)
 {
     static tf::TransformBroadcaster broadcaster_laser;
     tf::Transform transform;
-    transform.setOrigin( tf::Vector3(laserData.offset_x, laserData.offset_y, laserData.offset_z) );
+    transform.setOrigin( tf::Vector3(laserData->offset_x, laserData->offset_y, laserData->offset_z) );
     tf::Quaternion q;
-    q.setRPY(0, laserData.tilt_angle, 0);
+    q.setRPY(0, laserData->tilt_angle, 0);
     transform.setRotation(q);
 
     broadcaster_laser.sendTransform(tf::StampedTransform(transform, ros::Time::now(), "base_link", "laser"));
