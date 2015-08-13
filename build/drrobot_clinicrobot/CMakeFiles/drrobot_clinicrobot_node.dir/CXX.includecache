@@ -6,6 +6,24 @@
 
 #IncludeRegexTransform: 
 
+/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotconst.cxx
+
+/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pdrive.cxx
+
+/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotp2pspeeddrive.cxx
+../../../../src/drrobot_clinicrobot/include/drrobot_clinicrobot/drrobotp2pspeeddrive.hpp
+/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include/drrobot_clinicrobot/drrobotp2pspeeddrive.hpp
+
+/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotprotocol.cxx
+
+/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensordata.cxx
+
+/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensormapbuild.cxx
+../../../../src/drrobot_clinicrobot/include/drrobot_clinicrobot/drrobotsensormapbuild.hpp
+/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include/drrobot_clinicrobot/drrobotsensormapbuild.hpp
+
+/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_drrobotsensormapbuildhelper.cxx
+
 /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_mainwindow.cxx
 ../../../../src/drrobot_clinicrobot/include/drrobot_clinicrobot/mainwindow.hpp
 /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include/drrobot_clinicrobot/mainwindow.hpp
@@ -13,6 +31,14 @@
 /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_qnode.cxx
 ../../../../src/drrobot_clinicrobot/include/drrobot_clinicrobot/qnode.hpp
 /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include/drrobot_clinicrobot/qnode.hpp
+
+/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow.cxx
+
+/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/include/drrobot_clinicrobot/moc_ui_mainwindow_copy.cxx
+
+/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/qrc_images.cxx
+QtCore/qglobal.h
+-
 
 /home/drrobot1/github/BlueBerry/devel/include/drrobot_clinicrobot/BumpSensor.h
 string
@@ -365,6 +391,14 @@ QtGui/QTextEdit
 -
 QtGui/QWidget
 -
+
+/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/src/drrobotp2pspeeddrive.cpp
+../include/drrobot_clinicrobot/drrobotp2pspeeddrive.hpp
+/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include/drrobot_clinicrobot/drrobotp2pspeeddrive.hpp
+
+/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/src/drrootsensormapbuild.cpp
+../include/drrobot_clinicrobot/drrobotsensormapbuild.hpp
+/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include/drrobot_clinicrobot/drrobotsensormapbuild.hpp
 
 /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/src/main.cpp
 QtGui

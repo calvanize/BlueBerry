@@ -81,7 +81,7 @@ int main(int argc, char** argv){
                   tf::StampedTransform(
                       tf::Transform(tf::Quaternion(0, 0, 0, 1), tf::Vector3(-0.05, 0.0, 0.7)),
                       ros::Time::now(),"base_link", "base_USsensor5"));
-      //ros::spin();
+      ros::spin();
 
       r.sleep();
 
