@@ -346,7 +346,9 @@ void QNode::publisherOdometry(RobotPositionData robotPositionData, RobotVelocity
        odom_trans.transform.rotation = odom_quat;
 
        //send the transform
-       odom_broadcaster.sendTransform(odom_trans);
+       tf::StampedTransform transform;
+       tf::transformStampedMsgToTF(odom_trans, transform);
+       odom_broadcaster.sendTransform(transform);
 
        //next, we'll publish the odometry message over ROS
        nav_msgs::Odometry odom;

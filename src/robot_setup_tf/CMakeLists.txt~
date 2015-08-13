@@ -9,7 +9,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   tf
 )
-find_package(Qt4 REQUIRED COMPONENTS QtCore QtGui QtNetwork QtXml)
+
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)

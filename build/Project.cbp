@@ -731,6 +731,44 @@
             <DistClean command="/usr/bin/make -f &quot;/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
+      <Target title="tf_Odom_broadcaster">
+         <Option output="/home/drrobot1/github/BlueBerry/devel/lib/robot_setup_tf/tf_Odom_broadcaster" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/drrobot1/github/BlueBerry/devel/lib/robot_setup_tf" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DROS_BUILD_SHARED_LIBS=1" />
+            <Add option="-DROS_PACKAGE_NAME=&quot;robot_setup_tf&quot;" />
+            <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
+            <Add directory="/opt/ros/indigo/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/drrobot1/github/BlueBerry/build/robot_setup_tf/Makefile&quot;  VERBOSE=1 tf_Odom_broadcaster" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/drrobot1/github/BlueBerry/build/robot_setup_tf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/drrobot1/github/BlueBerry/build/robot_setup_tf/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/drrobot1/github/BlueBerry/build/robot_setup_tf/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
+      <Target title="tf_Odom_broadcaster/fast">
+         <Option output="/home/drrobot1/github/BlueBerry/devel/lib/robot_setup_tf/tf_Odom_broadcaster" prefix_auto="0" extension_auto="0" />
+         <Option working_dir="/home/drrobot1/github/BlueBerry/devel/lib/robot_setup_tf" />
+         <Option object_output="./" />
+         <Option type="1" />
+         <Option compiler="gcc" />
+         <Compiler>
+            <Add option="-DROS_BUILD_SHARED_LIBS=1" />
+            <Add option="-DROS_PACKAGE_NAME=&quot;robot_setup_tf&quot;" />
+            <Add option="-DROSCONSOLE_BACKEND_LOG4CXX" />
+            <Add directory="/opt/ros/indigo/include" />
+         </Compiler>
+         <MakeCommands>
+            <Build command="/usr/bin/make -f &quot;/home/drrobot1/github/BlueBerry/build/robot_setup_tf/Makefile&quot;  VERBOSE=1 tf_Odom_broadcaster/fast" />
+            <CompileFile command="/usr/bin/make -f &quot;/home/drrobot1/github/BlueBerry/build/robot_setup_tf/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
+            <Clean command="/usr/bin/make -f &quot;/home/drrobot1/github/BlueBerry/build/robot_setup_tf/Makefile&quot;  VERBOSE=1 clean" />
+            <DistClean command="/usr/bin/make -f &quot;/home/drrobot1/github/BlueBerry/build/robot_setup_tf/Makefile&quot;  VERBOSE=1 clean" />
+         </MakeCommands>
+      </Target>
       <Target title="tf_broadcaster">
          <Option output="/home/drrobot1/github/BlueBerry/devel/lib/robot_setup_tf/tf_broadcaster" prefix_auto="0" extension_auto="0" />
          <Option working_dir="/home/drrobot1/github/BlueBerry/devel/lib/robot_setup_tf" />
@@ -779,6 +817,8 @@
       <Unit filename="/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/src/mainwindow.cpp">
       </Unit>
       <Unit filename="/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/src/qnode.cpp">
+      </Unit>
+      <Unit filename="/home/drrobot1/github/BlueBerry/src/robot_setup_tf/src/tf_Odom_broadcaster.cpp">
       </Unit>
       <Unit filename="/home/drrobot1/github/BlueBerry/src/robot_setup_tf/src/tf_broadcaster.cpp">
       </Unit>
