@@ -19,6 +19,12 @@ sstream
 -
 drrobot_clinicrobot/LaserDriveData.h
 -
+drrobot_clinicrobot/RobotPosition.h
+-
+geometry_msgs/Quaternion.h
+-
+geometry_msgs/TransformStamped.h
+-
 
 /opt/ros/indigo/include/XmlRpcDecl.h
 ros/macros.h
