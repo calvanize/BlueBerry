@@ -2,4 +2,4 @@
 source_root_dir = "/home/drrobot1/github/BlueBerry/src"
 whitelisted_packages = "".split(';') if "" != "" else []
 blacklisted_packages = "".split(';') if "" != "" else []
-underlay_workspaces = "/home/drrobot1/catkin_ws/devel;/opt/ros/indigo".split(';') if "/home/drrobot1/catkin_ws/devel;/opt/ros/indigo" != "" else []
+underlay_workspaces = "/home/drrobot1/github/BlueBerry/devel;/opt/ros/indigo".split(';') if "/home/drrobot1/github/BlueBerry/devel;/opt/ros/indigo" != "" else []

@@ -1,21 +1,21 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec3082701113/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3082701113.dir/build.make CMakeFiles/cmTryCompileExec3082701113.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec1503562816/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1503562816.dir/build.make CMakeFiles/cmTryCompileExec1503562816.dir/build
 make[1]: Entering directory `/home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec3082701113.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3082701113.dir/CheckSymbolExists.c.o   -c /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTryCompileExec3082701113
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3082701113.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec3082701113.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3082701113 -rdynamic 
-CMakeFiles/cmTryCompileExec3082701113.dir/CheckSymbolExists.c.o: In function `main':
+Building C object CMakeFiles/cmTryCompileExec1503562816.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec1503562816.dir/CheckSymbolExists.c.o   -c /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec1503562816
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1503562816.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec1503562816.dir/CheckSymbolExists.c.o  -o cmTryCompileExec1503562816 -rdynamic 
+CMakeFiles/cmTryCompileExec1503562816.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1503562816] Error 1
 make[1]: Leaving directory `/home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp'
-make[1]: *** [cmTryCompileExec3082701113] Error 1
-make: *** [cmTryCompileExec3082701113/fast] Error 2
+make: *** [cmTryCompileExec1503562816/fast] Error 2
 
 File /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -35,38 +35,38 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec2716498599/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2716498599.dir/build.make CMakeFiles/cmTryCompileExec2716498599.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec1190341039/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1190341039.dir/build.make CMakeFiles/cmTryCompileExec1190341039.dir/build
 make[1]: Entering directory `/home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec2716498599.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2716498599.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec2716498599
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2716498599.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2716498599.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2716498599 -rdynamic -lpthreads 
+Building C object CMakeFiles/cmTryCompileExec1190341039.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1190341039.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1190341039
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1190341039.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1190341039.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1190341039 -rdynamic -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [cmTryCompileExec2716498599] Error 1
+make[1]: *** [cmTryCompileExec1190341039] Error 1
 make[1]: Leaving directory `/home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp'
-make: *** [cmTryCompileExec2716498599/fast] Error 2
+make: *** [cmTryCompileExec1190341039/fast] Error 2
 
 
 Determining if the Q_WS_WIN exist failed with the following output:
 Change Dir: /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec235354201/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec235354201.dir/build.make CMakeFiles/cmTryCompileExec235354201.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec3478686483/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3478686483.dir/build.make CMakeFiles/cmTryCompileExec3478686483.dir/build
 make[1]: Entering directory `/home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec235354201.dir/CheckSymbolExists.cxx.o
-/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec235354201.dir/CheckSymbolExists.cxx.o -c /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Building CXX object CMakeFiles/cmTryCompileExec3478686483.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec3478686483.dir/CheckSymbolExists.cxx.o -c /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
 /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
 /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_WIN’ was not declared in this scope
    return ((int*)(&Q_WS_WIN))[argc];
                    ^
-make[1]: *** [CMakeFiles/cmTryCompileExec235354201.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: *** [CMakeFiles/cmTryCompileExec3478686483.dir/CheckSymbolExists.cxx.o] Error 1
 make[1]: Leaving directory `/home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp'
-make: *** [cmTryCompileExec235354201/fast] Error 2
+make: *** [cmTryCompileExec3478686483/fast] Error 2
 
 File /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
 /* */
@@ -86,19 +86,19 @@ int main(int argc, char** argv)
 Determining if the Q_WS_QWS exist failed with the following output:
 Change Dir: /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec1805162880/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1805162880.dir/build.make CMakeFiles/cmTryCompileExec1805162880.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec701057664/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec701057664.dir/build.make CMakeFiles/cmTryCompileExec701057664.dir/build
 make[1]: Entering directory `/home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec1805162880.dir/CheckSymbolExists.cxx.o
-/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec1805162880.dir/CheckSymbolExists.cxx.o -c /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Building CXX object CMakeFiles/cmTryCompileExec701057664.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec701057664.dir/CheckSymbolExists.cxx.o -c /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
 /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
 /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_QWS’ was not declared in this scope
    return ((int*)(&Q_WS_QWS))[argc];
                    ^
+make[1]: *** [CMakeFiles/cmTryCompileExec701057664.dir/CheckSymbolExists.cxx.o] Error 1
 make[1]: Leaving directory `/home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp'
-make[1]: *** [CMakeFiles/cmTryCompileExec1805162880.dir/CheckSymbolExists.cxx.o] Error 1
-make: *** [cmTryCompileExec1805162880/fast] Error 2
+make: *** [cmTryCompileExec701057664/fast] Error 2
 
 File /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
 /* */
@@ -118,19 +118,19 @@ int main(int argc, char** argv)
 Determining if the Q_WS_MAC exist failed with the following output:
 Change Dir: /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec1946848661/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1946848661.dir/build.make CMakeFiles/cmTryCompileExec1946848661.dir/build
+Run Build Command:/usr/bin/make "cmTryCompileExec3873827613/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3873827613.dir/build.make CMakeFiles/cmTryCompileExec3873827613.dir/build
 make[1]: Entering directory `/home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp'
 /usr/bin/cmake -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec1946848661.dir/CheckSymbolExists.cxx.o
-/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec1946848661.dir/CheckSymbolExists.cxx.o -c /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Building CXX object CMakeFiles/cmTryCompileExec3873827613.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec3873827613.dir/CheckSymbolExists.cxx.o -c /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
 /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
 /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_MAC’ was not declared in this scope
    return ((int*)(&Q_WS_MAC))[argc];
                    ^
-make[1]: *** [CMakeFiles/cmTryCompileExec1946848661.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: *** [CMakeFiles/cmTryCompileExec3873827613.dir/CheckSymbolExists.cxx.o] Error 1
 make[1]: Leaving directory `/home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp'
-make: *** [cmTryCompileExec1946848661/fast] Error 2
+make: *** [cmTryCompileExec3873827613/fast] Error 2
 
 File /home/drrobot1/github/BlueBerry/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
 /* */

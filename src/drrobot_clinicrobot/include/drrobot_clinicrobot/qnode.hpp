@@ -20,6 +20,8 @@
 //calvin included this
 #include <sensor_msgs/LaserScan.h>
 #include "drrobotsensormapbuildhelper.hpp"
+#include <tf/transform_broadcaster.h>
+#include <geometry_msgs/Twist.h>
 //calvin end
 #include <QThread>
 #include <QStringListModel>
@@ -62,6 +64,7 @@ public:
 
     //calvin added this for odometry
     void publisherOdometry(RobotPositionData robotPositionData, RobotVelocity robotVelocity);
+
 	/*********************
 	** Logging
 	**********************/
@@ -111,6 +114,7 @@ private:
 
     //calvin added this
     ros::Subscriber laser_scan_sub_;
+    ros::Subscriber geo_twist_sub_;
     //calvin end
 
 	int msgCnt;
@@ -120,6 +124,7 @@ private:
     void laserCmdReceived(const drrobot_clinicrobot::LaserDriveCmd::ConstPtr& cmd);
     //calvin added this
     void lasersensorReceived(const sensor_msgs::LaserScan::ConstPtr& scan);
+    void navigationCmd(const geometry_msgs::Twist::ConstPtr& twist);
     //calvin ends
 
 };
