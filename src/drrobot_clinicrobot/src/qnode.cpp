@@ -84,7 +84,7 @@ bool QNode::init() {
     //laser_scan_sub_ = n.subscribe<sensor_msgs::LaserScan>("scan", 1000, &QNode::laserScanUpdated);
     laser_scan_sub_ = n.subscribe<sensor_msgs::LaserScan>("scan", 1, boost::bind(&QNode::lasersensorReceived, this, _1));
     odom_pub_ = n.advertise<nav_msgs::Odometry>("drrobot_clinicrobot_odometry", 1);
-    geo_twist_sub_ = n.subscribe<geometry_msgs::Twist>("navigation_command", 1, boost::bind(&QNode::navigationCmd, this, _1));
+    geo_twist_sub_ = n.subscribe<geometry_msgs::Twist>("cmd_vel", 1, boost::bind(&QNode::navigationCmd, this, _1));
     //calvin end
 
 
