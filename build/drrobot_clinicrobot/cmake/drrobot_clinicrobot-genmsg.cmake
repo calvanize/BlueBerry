@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "drrobot_clinicrobot: 13 messages, 0 services")
+message(STATUS "drrobot_clinicrobot: 14 messages, 0 services")
 
 set(MSG_I_FLAGS "-Idrrobot_clinicrobot:/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg;-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg")
 
@@ -33,6 +33,11 @@ add_custom_target(_drrobot_clinicrobot_generate_messages_check_deps_${_filename}
 get_filename_component(_filename "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/MotorInfoArray.msg" NAME_WE)
 add_custom_target(_drrobot_clinicrobot_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "drrobot_clinicrobot" "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/MotorInfoArray.msg" "drrobot_clinicrobot/MotorInfo:std_msgs/Header"
+)
+
+get_filename_component(_filename "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/P2pCmd.msg" NAME_WE)
+add_custom_target(_drrobot_clinicrobot_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "drrobot_clinicrobot" "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/P2pCmd.msg" ""
 )
 
 get_filename_component(_filename "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/LaserDriveData.msg" NAME_WE)
@@ -100,6 +105,12 @@ _generate_msg_cpp(drrobot_clinicrobot
 )
 _generate_msg_cpp(drrobot_clinicrobot
   "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/HeadCmd.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/drrobot_clinicrobot
+)
+_generate_msg_cpp(drrobot_clinicrobot
+  "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/P2pCmd.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/drrobot_clinicrobot
@@ -187,6 +198,8 @@ get_filename_component(_filename "/home/drrobot1/github/BlueBerry/src/drrobot_cl
 add_dependencies(drrobot_clinicrobot_generate_messages_cpp _drrobot_clinicrobot_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/MotorInfoArray.msg" NAME_WE)
 add_dependencies(drrobot_clinicrobot_generate_messages_cpp _drrobot_clinicrobot_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/P2pCmd.msg" NAME_WE)
+add_dependencies(drrobot_clinicrobot_generate_messages_cpp _drrobot_clinicrobot_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/LaserDriveData.msg" NAME_WE)
 add_dependencies(drrobot_clinicrobot_generate_messages_cpp _drrobot_clinicrobot_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/LaserDriveCmd.msg" NAME_WE)
@@ -229,6 +242,12 @@ _generate_msg_lisp(drrobot_clinicrobot
 )
 _generate_msg_lisp(drrobot_clinicrobot
   "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/HeadCmd.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/drrobot_clinicrobot
+)
+_generate_msg_lisp(drrobot_clinicrobot
+  "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/P2pCmd.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/drrobot_clinicrobot
@@ -316,6 +335,8 @@ get_filename_component(_filename "/home/drrobot1/github/BlueBerry/src/drrobot_cl
 add_dependencies(drrobot_clinicrobot_generate_messages_lisp _drrobot_clinicrobot_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/MotorInfoArray.msg" NAME_WE)
 add_dependencies(drrobot_clinicrobot_generate_messages_lisp _drrobot_clinicrobot_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/P2pCmd.msg" NAME_WE)
+add_dependencies(drrobot_clinicrobot_generate_messages_lisp _drrobot_clinicrobot_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/LaserDriveData.msg" NAME_WE)
 add_dependencies(drrobot_clinicrobot_generate_messages_lisp _drrobot_clinicrobot_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/LaserDriveCmd.msg" NAME_WE)
@@ -358,6 +379,12 @@ _generate_msg_py(drrobot_clinicrobot
 )
 _generate_msg_py(drrobot_clinicrobot
   "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/HeadCmd.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/drrobot_clinicrobot
+)
+_generate_msg_py(drrobot_clinicrobot
+  "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/P2pCmd.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/drrobot_clinicrobot
@@ -444,6 +471,8 @@ add_dependencies(drrobot_clinicrobot_generate_messages_py _drrobot_clinicrobot_g
 get_filename_component(_filename "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/HeadCmd.msg" NAME_WE)
 add_dependencies(drrobot_clinicrobot_generate_messages_py _drrobot_clinicrobot_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/MotorInfoArray.msg" NAME_WE)
+add_dependencies(drrobot_clinicrobot_generate_messages_py _drrobot_clinicrobot_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/P2pCmd.msg" NAME_WE)
 add_dependencies(drrobot_clinicrobot_generate_messages_py _drrobot_clinicrobot_generate_messages_check_deps_${_filename})
 get_filename_component(_filename "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/LaserDriveData.msg" NAME_WE)
 add_dependencies(drrobot_clinicrobot_generate_messages_py _drrobot_clinicrobot_generate_messages_check_deps_${_filename})

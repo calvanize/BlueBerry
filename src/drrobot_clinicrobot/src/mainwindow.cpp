@@ -180,6 +180,7 @@ void MainWindow::setROSReceive()
         QObject::connect(&qnode, SIGNAL(laserCmdUpdated(double,int)), this, SLOT(laserCmdSend(double,int)));
         //calvin added this       
         QObject::connect(&qnode, SIGNAL(laserScanUpdated(double)),this, SLOT(laserScanEffected(double)));
+        QObject::connect(&qnode, SIGNAL(p2pCmdUpdated(double,double,double,double,int,int)), this, SLOT(p2pCmdSend(double,double,double,double,int,int)));
         //calvin end
     }
     else{
@@ -188,6 +189,7 @@ void MainWindow::setROSReceive()
         QObject::disconnect(&qnode, SIGNAL(laserCmdUpdated(double,int)), this, SLOT(laserCmdSend(double,int)));
         //calvin added this
         QObject::disconnect(&qnode, SIGNAL(laserScanUpdated(double)), this, SLOT(laserScanEffected(double)));
+        QObject::disconnect(&qnode, SIGNAL(p2pCmdUpdated(double,double,double,double,int,int)), this, SLOT(p2pCmdSend(double, double, double,double,int, int)));
         //calvin end
     }
 
@@ -2932,6 +2934,37 @@ void MainWindow::laserScanEffected(double a)
    // drrobotSensorMapBuilder.ConfigLaserSensor(laserConfigData);
    // drrobotSensorMapBuilder.UpdateLaserSensorInfo(laserSensorData);
 
+}
+
+void MainWindow::p2pCmdSend(double a, double b, double c, double d, int e, int f)
+{
+    setPoint.TargetX = a;
+    setPoint.TargetY = b;
+    setPoint.TargetDir = c /180 * M_PI;
+    setPoint.StopTime = 2;
+    if (d > MAXSPEED) setPoint.ForwardSpeed = MAXSPEED;
+    else  setPoint.ForwardSpeed = d;
+    setPoint.Forgetable = false;
+    setPoint.NonStop = false;
+    setPoint.FinalPosture = true;
+    setPoint.TargetTime = 200;
+    setPoint.TargetTolerance = 0.05;
+    setPoint.MaxTurnSpeed = 1;
+
+    if (e == 1){
+        setPoint.CAEnable = true;
+    }else{
+        setPoint.CAEnable = false;
+    }
+    if (f == 1){
+        setPoint.ReverseDrive = true;
+    }else{
+        setPoint.ReverseDrive = false;
+    }
+    setPoint.TargetDirTolerance = 3 * M_PI/180;
+    drrobotp2pSpeedDrive.SetTargetPosition(setPoint);
+    drrobotp2pSpeedDrive.SendP2PCmd(P2PCtrlCmdP2PGo);
+    p2pStatus = P2PGo;
 }
 
 //calvin ends

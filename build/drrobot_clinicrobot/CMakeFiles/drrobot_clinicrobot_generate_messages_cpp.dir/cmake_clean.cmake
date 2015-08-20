@@ -3,6 +3,7 @@ FILE(REMOVE_RECURSE
   "/home/drrobot1/github/BlueBerry/devel/include/drrobot_clinicrobot/RobotPosition.h"
   "/home/drrobot1/github/BlueBerry/devel/include/drrobot_clinicrobot/MotorInfo.h"
   "/home/drrobot1/github/BlueBerry/devel/include/drrobot_clinicrobot/HeadCmd.h"
+  "/home/drrobot1/github/BlueBerry/devel/include/drrobot_clinicrobot/P2pCmd.h"
   "/home/drrobot1/github/BlueBerry/devel/include/drrobot_clinicrobot/RangeArray.h"
   "/home/drrobot1/github/BlueBerry/devel/include/drrobot_clinicrobot/MotorInfoArray.h"
   "/home/drrobot1/github/BlueBerry/devel/include/drrobot_clinicrobot/LaserDriveData.h"

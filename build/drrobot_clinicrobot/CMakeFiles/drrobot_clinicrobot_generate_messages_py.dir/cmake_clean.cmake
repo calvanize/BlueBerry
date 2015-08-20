@@ -3,6 +3,7 @@ FILE(REMOVE_RECURSE
   "/home/drrobot1/github/BlueBerry/devel/lib/python2.7/dist-packages/drrobot_clinicrobot/msg/_RobotPosition.py"
   "/home/drrobot1/github/BlueBerry/devel/lib/python2.7/dist-packages/drrobot_clinicrobot/msg/_MotorInfo.py"
   "/home/drrobot1/github/BlueBerry/devel/lib/python2.7/dist-packages/drrobot_clinicrobot/msg/_HeadCmd.py"
+  "/home/drrobot1/github/BlueBerry/devel/lib/python2.7/dist-packages/drrobot_clinicrobot/msg/_P2pCmd.py"
   "/home/drrobot1/github/BlueBerry/devel/lib/python2.7/dist-packages/drrobot_clinicrobot/msg/_RangeArray.py"
   "/home/drrobot1/github/BlueBerry/devel/lib/python2.7/dist-packages/drrobot_clinicrobot/msg/_MotorInfoArray.py"
   "/home/drrobot1/github/BlueBerry/devel/lib/python2.7/dist-packages/drrobot_clinicrobot/msg/_LaserDriveData.py"

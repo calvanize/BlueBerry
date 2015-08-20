@@ -117,8 +117,8 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/drrobot1/github/BlueBerry/build/gtest/cmake_install.cmake")
-  INCLUDE("/home/drrobot1/github/BlueBerry/build/hokuyo_test/cmake_install.cmake")
   INCLUDE("/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/cmake_install.cmake")
+  INCLUDE("/home/drrobot1/github/BlueBerry/build/hokuyo_test/cmake_install.cmake")
   INCLUDE("/home/drrobot1/github/BlueBerry/build/robot_setup_tf/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)

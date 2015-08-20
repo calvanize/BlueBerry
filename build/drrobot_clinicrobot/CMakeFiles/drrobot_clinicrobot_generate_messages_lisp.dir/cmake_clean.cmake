@@ -3,6 +3,7 @@ FILE(REMOVE_RECURSE
   "/home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/RobotPosition.lisp"
   "/home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/MotorInfo.lisp"
   "/home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/HeadCmd.lisp"
+  "/home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/P2pCmd.lisp"
   "/home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/RangeArray.lisp"
   "/home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/MotorInfoArray.lisp"
   "/home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/LaserDriveData.lisp"

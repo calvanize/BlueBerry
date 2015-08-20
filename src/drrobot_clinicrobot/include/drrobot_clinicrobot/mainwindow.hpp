@@ -167,6 +167,7 @@ private slots:
 
     //calvin laser scan data
     void laserScanEffected(double);
+    void p2pCmdSend(double, double, double,double,int, int);
     //calvin ends
 
     //for laser scan drive

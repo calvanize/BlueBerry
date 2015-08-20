@@ -22,7 +22,7 @@ static const uint qt_meta_data_drrobot_clinicrobot__MainWindow[] = {
        6,       // revision
        0,       // classname
        0,    0, // classinfo
-      45,   14, // methods
+      46,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -45,36 +45,37 @@ static const uint qt_meta_data_drrobot_clinicrobot__MainWindow[] = {
      251,   32,   32,   32, 0x08,
      281,   32,  276,   32, 0x08,
      296,   32,   32,   32, 0x08,
-     322,   32,   32,   32, 0x08,
-     344,   32,   32,   32, 0x08,
-     368,   32,   32,   32, 0x08,
-     388,   32,   32,   32, 0x08,
-     407,   32,   32,   32, 0x08,
-     423,   32,   32,   32, 0x08,
-     441,   32,   32,   32, 0x08,
-     470,   32,   32,   32, 0x08,
-     490,   32,   32,   32, 0x08,
-     506,   32,   32,   32, 0x08,
-     527,   32,   32,   32, 0x08,
-     541,   32,   32,   32, 0x08,
-     562,   32,   32,   32, 0x08,
-     585,   32,   32,   32, 0x08,
-     596,   32,   32,   32, 0x08,
-     606,   32,   32,   32, 0x08,
-     626,   32,   32,   32, 0x08,
-     650,  644,   32,   32, 0x08,
-     671,  663,   32,   32, 0x08,
-     706,  702,   32,   32, 0x08,
-     741,   32,   32,   32, 0x08,
-     752,   32,   32,   32, 0x08,
-     762,   32,   32,   32, 0x08,
-     776,   32,   32,   32, 0x08,
-     793,   32,   32,   32, 0x08,
-     807,   32,   32,   32, 0x08,
-     851,  821,   32,   32, 0x08,
-     950,  877,   32,   32, 0x08,
-    1011,  993,   32,   32, 0x08,
-    1036,   32,   32,   32, 0x08,
+     328,  322,   32,   32, 0x08,
+     376,   32,   32,   32, 0x08,
+     398,   32,   32,   32, 0x08,
+     422,   32,   32,   32, 0x08,
+     442,   32,   32,   32, 0x08,
+     461,   32,   32,   32, 0x08,
+     477,   32,   32,   32, 0x08,
+     495,   32,   32,   32, 0x08,
+     524,   32,   32,   32, 0x08,
+     544,   32,   32,   32, 0x08,
+     560,   32,   32,   32, 0x08,
+     581,   32,   32,   32, 0x08,
+     595,   32,   32,   32, 0x08,
+     616,   32,   32,   32, 0x08,
+     639,   32,   32,   32, 0x08,
+     650,   32,   32,   32, 0x08,
+     660,   32,   32,   32, 0x08,
+     680,   32,   32,   32, 0x08,
+     704,  698,   32,   32, 0x08,
+     725,  717,   32,   32, 0x08,
+     760,  756,   32,   32, 0x08,
+     795,   32,   32,   32, 0x08,
+     806,   32,   32,   32, 0x08,
+     816,   32,   32,   32, 0x08,
+     830,   32,   32,   32, 0x08,
+     847,   32,   32,   32, 0x08,
+     861,   32,   32,   32, 0x08,
+     905,  875,   32,   32, 0x08,
+    1004,  931,   32,   32, 0x08,
+    1065, 1047,   32,   32, 0x08,
+    1090,   32,   32,   32, 0x08,
 
        0        // eod
 };
@@ -89,6 +90,7 @@ static const char qt_meta_stringdata_drrobot_clinicrobot__MainWindow[] = {
     "sendHeadStopCmd()\0resetHeadTilt()\0"
     "resetHeadPan()\0keyboardMotionCtrl(bool)\0"
     "bool\0event(QEvent*)\0laserScanEffected(double)\0"
+    ",,,,,\0p2pCmdSend(double,double,double,double,int,int)\0"
     "connectToLaserDrive()\0processLaserDriveData()\0"
     "sendLaserDriveCmd()\0setLaserAutoScan()\0"
     "laserAutoScan()\0laserResetDrive()\0"
@@ -133,36 +135,37 @@ void drrobot_clinicrobot::MainWindow::qt_static_metacall(QObject *_o, QMetaObjec
         case 13: { bool _r = _t->event((*reinterpret_cast< QEvent*(*)>(_a[1])));
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = _r; }  break;
         case 14: _t->laserScanEffected((*reinterpret_cast< double(*)>(_a[1]))); break;
-        case 15: _t->connectToLaserDrive(); break;
-        case 16: _t->processLaserDriveData(); break;
-        case 17: _t->sendLaserDriveCmd(); break;
-        case 18: _t->setLaserAutoScan(); break;
-        case 19: _t->laserAutoScan(); break;
-        case 20: _t->laserResetDrive(); break;
-        case 21: _t->connectToChargerController(); break;
-        case 22: _t->processChargeData(); break;
-        case 23: _t->sendChargeCmd(); break;
-        case 24: _t->sendSwitchPowerCmd(); break;
-        case 25: _t->setChargeEn(); break;
-        case 26: _t->connectToIndoorGPS(); break;
-        case 27: _t->processIndoorGPSData(); break;
-        case 28: _t->ctrlFunc(); break;
-        case 29: _t->disData(); break;
-        case 30: _t->newConnectionFace(); break;
-        case 31: _t->processFaceData(); break;
-        case 32: _t->setFile((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 33: _t->updateSensorMap((*reinterpret_cast< SensorMapData(*)>(_a[1]))); break;
-        case 34: _t->p2pUpdateMotorCmd((*reinterpret_cast< MotorControlCmd(*)>(_a[1]))); break;
-        case 35: _t->p2pStart(); break;
-        case 36: _t->p2pStop(); break;
-        case 37: _t->patrolStart(); break;
-        case 38: _t->goChargerStart(); break;
-        case 39: _t->pathControl(); break;
-        case 40: _t->exitCharger(); break;
-        case 41: _t->wheelCmdSend((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3]))); break;
-        case 42: _t->headCmdSend((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3])),(*reinterpret_cast< double(*)>(_a[4])),(*reinterpret_cast< int(*)>(_a[5])),(*reinterpret_cast< int(*)>(_a[6]))); break;
-        case 43: _t->laserCmdSend((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
-        case 44: _t->setROSReceive(); break;
+        case 15: _t->p2pCmdSend((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2])),(*reinterpret_cast< double(*)>(_a[3])),(*reinterpret_cast< double(*)>(_a[4])),(*reinterpret_cast< int(*)>(_a[5])),(*reinterpret_cast< int(*)>(_a[6]))); break;
+        case 16: _t->connectToLaserDrive(); break;
+        case 17: _t->processLaserDriveData(); break;
+        case 18: _t->sendLaserDriveCmd(); break;
+        case 19: _t->setLaserAutoScan(); break;
+        case 20: _t->laserAutoScan(); break;
+        case 21: _t->laserResetDrive(); break;
+        case 22: _t->connectToChargerController(); break;
+        case 23: _t->processChargeData(); break;
+        case 24: _t->sendChargeCmd(); break;
+        case 25: _t->sendSwitchPowerCmd(); break;
+        case 26: _t->setChargeEn(); break;
+        case 27: _t->connectToIndoorGPS(); break;
+        case 28: _t->processIndoorGPSData(); break;
+        case 29: _t->ctrlFunc(); break;
+        case 30: _t->disData(); break;
+        case 31: _t->newConnectionFace(); break;
+        case 32: _t->processFaceData(); break;
+        case 33: _t->setFile((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 34: _t->updateSensorMap((*reinterpret_cast< SensorMapData(*)>(_a[1]))); break;
+        case 35: _t->p2pUpdateMotorCmd((*reinterpret_cast< MotorControlCmd(*)>(_a[1]))); break;
+        case 36: _t->p2pStart(); break;
+        case 37: _t->p2pStop(); break;
+        case 38: _t->patrolStart(); break;
+        case 39: _t->goChargerStart(); break;
+        case 40: _t->pathControl(); break;
+        case 41: _t->exitCharger(); break;
+        case 42: _t->wheelCmdSend((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3]))); break;
+        case 43: _t->headCmdSend((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2])),(*reinterpret_cast< int(*)>(_a[3])),(*reinterpret_cast< double(*)>(_a[4])),(*reinterpret_cast< int(*)>(_a[5])),(*reinterpret_cast< int(*)>(_a[6]))); break;
+        case 44: _t->laserCmdSend((*reinterpret_cast< double(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 45: _t->setROSReceive(); break;
         default: ;
         }
     }
@@ -200,9 +203,9 @@ int drrobot_clinicrobot::MainWindow::qt_metacall(QMetaObject::Call _c, int _id, 
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 45)
+        if (_id < 46)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 45;
+        _id -= 46;
     }
     return _id;
 }

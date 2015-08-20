@@ -20,6 +20,7 @@
 #include <nav_msgs/Odometry.h>
 #include <tf/transform_broadcaster.h>
 #include <geometry_msgs/Twist.h>
+#include <drrobot_clinicrobot/P2pCmd.h>
 //calvin end
 #include "../include/drrobot_clinicrobot/qnode.hpp"
 #include "../include/drrobot_clinicrobot/drrobotsensordata.hpp"
@@ -85,6 +86,7 @@ bool QNode::init() {
     laser_scan_sub_ = n.subscribe<sensor_msgs::LaserScan>("scan", 1, boost::bind(&QNode::lasersensorReceived, this, _1));
     odom_pub_ = n.advertise<nav_msgs::Odometry>("drrobot_clinicrobot_odometry", 1);
     geo_twist_sub_ = n.subscribe<geometry_msgs::Twist>("cmd_vel", 1, boost::bind(&QNode::navigationCmd, this, _1));
+    p2p_go_sub_ = n.subscribe<drrobot_clinicrobot::P2pCmd>("P2PNavigation", 1, boost::bind(&QNode::p2pnavrecieved, this, _1));
     //calvin end
 
 
@@ -397,6 +399,11 @@ void QNode::navigationCmd(const geometry_msgs::Twist::ConstPtr &twist)
         std::cout << "Ros received motor command." << std::endl;
         emit wheelCmdUpdated(cmdValue1,cmdValue2,cmdCtrl);
     }
+}
+
+void QNode::p2pnavrecieved(const drrobot_clinicrobot::P2pCmd::ConstPtr &cmd)
+{
+    emit p2pCmdUpdated(cmd->TargetX, cmd->TargetY, cmd->TargetDir, cmd->ForwardSpeed, cmd->CAEnable, cmd->ReverseDrive);
 }
 
 //calvin end

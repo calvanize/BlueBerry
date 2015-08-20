@@ -48,6 +48,7 @@ include drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_generate_messages_lis
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_generate_messages_lisp: /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/RobotPosition.lisp
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_generate_messages_lisp: /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/MotorInfo.lisp
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_generate_messages_lisp: /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/HeadCmd.lisp
+drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_generate_messages_lisp: /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/P2pCmd.lisp
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_generate_messages_lisp: /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/RangeArray.lisp
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_generate_messages_lisp: /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/MotorInfoArray.lisp
 drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_generate_messages_lisp: /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/LaserDriveData.lisp
@@ -79,11 +80,17 @@ drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_generate_messages_lisp: /home
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from drrobot_clinicrobot/HeadCmd.msg"
 	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/HeadCmd.msg -Idrrobot_clinicrobot:/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p drrobot_clinicrobot -o /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg
 
+/home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/P2pCmd.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/P2pCmd.lisp: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/P2pCmd.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from drrobot_clinicrobot/P2pCmd.msg"
+	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/P2pCmd.msg -Idrrobot_clinicrobot:/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p drrobot_clinicrobot -o /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg
+
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/RangeArray.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/RangeArray.lisp: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/RangeArray.msg
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/RangeArray.lisp: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/RangeArray.lisp: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/Range.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from drrobot_clinicrobot/RangeArray.msg"
 	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/RangeArray.msg -Idrrobot_clinicrobot:/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p drrobot_clinicrobot -o /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg
 
@@ -91,61 +98,61 @@ drrobot_clinicrobot/CMakeFiles/drrobot_clinicrobot_generate_messages_lisp: /home
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/MotorInfoArray.lisp: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/MotorInfoArray.msg
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/MotorInfoArray.lisp: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/MotorInfo.msg
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/MotorInfoArray.lisp: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from drrobot_clinicrobot/MotorInfoArray.msg"
 	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/MotorInfoArray.msg -Idrrobot_clinicrobot:/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p drrobot_clinicrobot -o /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg
 
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/LaserDriveData.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/LaserDriveData.lisp: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/LaserDriveData.msg
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/LaserDriveData.lisp: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from drrobot_clinicrobot/LaserDriveData.msg"
 	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/LaserDriveData.msg -Idrrobot_clinicrobot:/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p drrobot_clinicrobot -o /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg
 
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/LaserDriveCmd.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/LaserDriveCmd.lisp: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/LaserDriveCmd.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from drrobot_clinicrobot/LaserDriveCmd.msg"
 	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/LaserDriveCmd.msg -Idrrobot_clinicrobot:/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p drrobot_clinicrobot -o /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg
 
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/PowerInfo.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/PowerInfo.lisp: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/PowerInfo.msg
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/PowerInfo.lisp: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from drrobot_clinicrobot/PowerInfo.msg"
 	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/PowerInfo.msg -Idrrobot_clinicrobot:/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p drrobot_clinicrobot -o /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg
 
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/MotorCmd.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/MotorCmd.lisp: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/MotorCmd.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from drrobot_clinicrobot/MotorCmd.msg"
 	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/MotorCmd.msg -Idrrobot_clinicrobot:/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p drrobot_clinicrobot -o /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg
 
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/IndoorGPS.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/IndoorGPS.lisp: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/IndoorGPS.msg
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/IndoorGPS.lisp: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from drrobot_clinicrobot/IndoorGPS.msg"
 	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/IndoorGPS.msg -Idrrobot_clinicrobot:/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p drrobot_clinicrobot -o /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg
 
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/BumpSensor.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/BumpSensor.lisp: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/BumpSensor.msg
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/BumpSensor.lisp: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from drrobot_clinicrobot/BumpSensor.msg"
 	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/BumpSensor.msg -Idrrobot_clinicrobot:/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p drrobot_clinicrobot -o /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg
 
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/Range.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/Range.lisp: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/Range.msg
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/Range.lisp: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from drrobot_clinicrobot/Range.msg"
 	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/Range.msg -Idrrobot_clinicrobot:/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p drrobot_clinicrobot -o /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg
 
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/RobotSystemData.lisp: /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/RobotSystemData.lisp: /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/RobotSystemData.msg
 /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/RobotSystemData.lisp: /opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/drrobot1/github/BlueBerry/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from drrobot_clinicrobot/RobotSystemData.msg"
 	cd /home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg/RobotSystemData.msg -Idrrobot_clinicrobot:/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p drrobot_clinicrobot -o /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg
 
@@ -153,6 +160,7 @@ drrobot_clinicrobot_generate_messages_lisp: drrobot_clinicrobot/CMakeFiles/drrob
 drrobot_clinicrobot_generate_messages_lisp: /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/RobotPosition.lisp
 drrobot_clinicrobot_generate_messages_lisp: /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/MotorInfo.lisp
 drrobot_clinicrobot_generate_messages_lisp: /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/HeadCmd.lisp
+drrobot_clinicrobot_generate_messages_lisp: /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/P2pCmd.lisp
 drrobot_clinicrobot_generate_messages_lisp: /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/RangeArray.lisp
 drrobot_clinicrobot_generate_messages_lisp: /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/MotorInfoArray.lisp
 drrobot_clinicrobot_generate_messages_lisp: /home/drrobot1/github/BlueBerry/devel/share/common-lisp/ros/drrobot_clinicrobot/msg/LaserDriveData.lisp
