@@ -317,6 +317,9 @@ void MainWindow::iniSystemData()
     inChargeCnt = 0;
     exitChargeFlag = false;
     exitChargeStep = 0;
+    //calvin added this for keyboard teleop
+    Keycount = 1;
+    //calvin ends
 
     for (int i = 0; i < IR_NUM; i++){
         irData[i].detectDis = 0;
@@ -2821,10 +2824,10 @@ void MainWindow::keyboardMotionCtrl(bool checked)
 bool MainWindow::event(QEvent *event)
 {
    if (event->type() == QEvent::KeyPress)
-   {
+   {       
        QKeyEvent *ke = static_cast<QKeyEvent*>(event);
        int a = ke->key();
-       if (ke->key() == Qt::Key_T)
+       if (ke->key() == Qt::Key_T && Keycount ==1)
        {
            double anglePos = 0;
            while (anglePos <= 40)
@@ -2837,9 +2840,10 @@ bool MainWindow::event(QEvent *event)
                anglePos += 1;
                a = ke->key();
            }
+           Keycount +=1;
            return true;
        }
-       else if (ke->key() == Qt::Key_V)
+       else if (ke->key() == Qt::Key_V && Keycount ==1)
        {
            double anglePos = 0;
            while (anglePos <= 40)
@@ -2852,9 +2856,11 @@ bool MainWindow::event(QEvent *event)
                anglePos += 1;
                a = ke->key();
            }
+           Keycount +=1;
            return true;
+
        }
-       else if (ke->key() == Qt::Key_H)
+       else if (ke->key() == Qt::Key_H && Keycount ==1)
        {
            double anglePos = 0;
            while(anglePos <= 90)
@@ -2866,10 +2872,11 @@ bool MainWindow::event(QEvent *event)
                robotMotorTimeControl(ctrlMode,4,cmd,time);
                anglePos  += 1;
            }
+           Keycount +=1;
            return true;
 
        }
-       else if (ke->key() == Qt::Key_D)
+       else if (ke->key() == Qt::Key_D && Keycount ==1)
        {
            double anglePos = 0;
            while(anglePos <= 90)
@@ -2881,31 +2888,43 @@ bool MainWindow::event(QEvent *event)
                robotMotorTimeControl(ctrlMode,4,-cmd,time);
                anglePos  += 1;
            }
+           Keycount +=1;
            return true;
        }
-       else if (ke->key() == Qt::Key_Left)
+       else if (ke->key() == Qt::Key_Left && Keycount ==1)
        {
            sendLeftTurnCmd();
+           Keycount +=1;
            return true;
        }
-       else if (ke->key() == Qt::Key_Right)
+       else if (ke->key() == Qt::Key_Right && Keycount == 1)
        {
            sendRightTurnCmd();
+           Keycount +=1;
            return true;
        }
-       else if (ke->key() == Qt::Key_Up)
+       else if (ke->key() == Qt::Key_Up && Keycount ==1)
        {
            sendForwardCmd();
+           Keycount +=1;
            return true;
        }
-       else if (ke->key() == Qt::Key_Down)
+       else if (ke->key() == Qt::Key_Down && Keycount == 1)
        {
            sendBackwardCmd();
+           Keycount +=1;
            return true;
        }
-       else if (ke->key() == Qt::Key_Enter)
+       else if ((ke->key() == Qt::Key_Left || ke->key() == Qt::Key_Right || ke->key() == Qt::Key_Up || ke->key() == Qt::Key_Down) && Keycount ==2)
        {
            sendStopCmd();
+           Keycount =1;
+           return true;
+       }
+       else if ((ke->key() == Qt::Key_T || ke->key() == Qt::Key_V || ke->key() == Qt::Key_H || ke->key() == Qt::Key_D) && Keycount ==2)
+       {
+           sendHeadStopCmd();
+           Keycount =1;
            return true;
        }
        else

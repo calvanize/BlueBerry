@@ -80,6 +80,10 @@ private:
     void robotEstVel();
     //calvin end here
 
+    //calvin variable for keyboard teleop
+    int Keycount;
+    //calvin ends
+
     //functions & var for laser scan drive motor
     void dealWithLaserDrivePackage(QString revData);
     int laserDriveFlag;
