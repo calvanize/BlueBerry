@@ -81,7 +81,7 @@ private:
     //calvin end here
 
     //calvin variable for keyboard teleop
-    int Keycount;
+    //int Keycount;
     //calvin ends
 
     //functions & var for laser scan drive motor
@@ -166,7 +166,7 @@ private slots:
 
     //calvin keyboard command
     void keyboardMotionCtrl(bool);
-    bool event(QEvent*);
+    //bool event(QEvent*);
     //calvin ends
 
     //calvin laser scan data
@@ -216,6 +216,10 @@ private slots:
     void headCmdSend (double headTiltPos, int headTiltFlag,int headTiltTime,double headPanPos,int headPanFlag,int headPanTime);
     void laserCmdSend(double laserPos,int scanFlag);
     void setROSReceive();   //checkboxStartROSReceive
+protected:
+    void keyPressEvent(QKeyEvent *ke);
+    void keyReleaseEvent(QKeyEvent *ke);
+
 };
 
 
