@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "Blueberry2_2dnav")
+set(Blueberry2_2dnav_MAINTAINER "drrobot1 <drrobot1@todo.todo>")
+set(Blueberry2_2dnav_DEPRECATED "")
+set(Blueberry2_2dnav_VERSION "0.0.0")
+set(Blueberry2_2dnav_BUILD_DEPENDS "hokuyo_node" "hokuyo_test" "move_base" "robot_setup_tf")
+set(Blueberry2_2dnav_RUN_DEPENDS "hokuyo_node" "hokuyo_test" "move_base" "robot_setup_tf")
+set(Blueberry2_2dnav_BUILDTOOL_DEPENDS "catkin")

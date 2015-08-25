@@ -318,7 +318,7 @@ void MainWindow::iniSystemData()
     exitChargeFlag = false;
     exitChargeStep = 0;
     //calvin added this for keyboard teleop
-    //Keycount = 1;
+    Keycount = 1;
     //calvin ends
 
     for (int i = 0; i < IR_NUM; i++){
@@ -2821,118 +2821,134 @@ void MainWindow::keyboardMotionCtrl(bool checked)
 
 }
 
-//bool MainWindow::event(QEvent *event)
-//{
-//   if (event->type() == QEvent::KeyPress)
-//   {
-//       QKeyEvent *ke = static_cast<QKeyEvent*>(event);
-//       int a = ke->key();
-//       if (ke->key() == Qt::Key_T && Keycount ==1)
-//       {
-//           double anglePos = 0;
-//           while (anglePos <= 40)
-//           {
-//               int cmd = anglePos * HEAD_TILT_CIRCLE_CNT /360;
-//               int time = ui->lineEditHeadCtrlTime->text().toInt();
-//               ctrlMode = MOTORPOSCTRL;
-//               // here we use position time control
-//               robotMotorTimeControl(ctrlMode,3,cmd,time);
-//               anglePos += 1;
-//               a = ke->key();
-//           }
-//           Keycount +=1;
-//           return true;
-//       }
-//       else if (ke->key() == Qt::Key_V && Keycount ==1)
-//       {
-//           double anglePos = 0;
-//           while (anglePos <= 40)
-//           {
-//               int cmd = anglePos * HEAD_TILT_CIRCLE_CNT /360;
-//               int time = ui->lineEditHeadCtrlTime->text().toInt();
-//               ctrlMode = MOTORPOSCTRL;
-//               // here we use position time control
-//               robotMotorTimeControl(ctrlMode,3,-cmd,time);
-//               anglePos += 1;
-//               a = ke->key();
-//           }
-//           Keycount +=1;
-//           return true;
+bool MainWindow::event(QEvent *event)
+{
+   if (event->type() == QEvent::KeyPress)
+   {
+       QKeyEvent *ke = static_cast<QKeyEvent*>(event);
+       if (ke->key() == Qt::Key_H && Keycount ==1)
+       {
+           double anglePos = 0;
+           while (anglePos <= 40)
+           {
+               int cmd = anglePos * HEAD_TILT_CIRCLE_CNT /360;
+               int time = ui->lineEditHeadCtrlTime->text().toInt();
+               ctrlMode = MOTORPOSCTRL;
+               // here we use position time control
+               robotMotorTimeControl(ctrlMode,3,cmd,time);
+               anglePos += 1;
+           }
+           Keycount +=1;
+           return true;
+       }
+       else if (ke->key() == Qt::Key_J && Keycount ==1)
+       {
+           double anglePos = 0;
+           while (anglePos <= 40)
+           {
+               int cmd = anglePos * HEAD_TILT_CIRCLE_CNT /360;
+               int time = ui->lineEditHeadCtrlTime->text().toInt();
+               ctrlMode = MOTORPOSCTRL;
+               // here we use position time control
+               robotMotorTimeControl(ctrlMode,3,-cmd,time);
+               anglePos += 1;
+           }
+           Keycount +=1;
+           return true;
 
-//       }
-//       else if (ke->key() == Qt::Key_H && Keycount ==1)
-//       {
-//           double anglePos = 0;
-//           while(anglePos <= 90)
-//           {
-//               int cmd = anglePos * HEAD_PAN_CIRCLE_CNT /360;
-//               int time = ui->lineEditHeadCtrlTime->text().toInt();
-//               ctrlMode = MOTORPOSCTRL;
-//               // here we use position time control
-//               robotMotorTimeControl(ctrlMode,4,cmd,time);
-//               anglePos  += 1;
-//           }
-//           Keycount +=1;
-//           return true;
+       }
+       else if (ke->key() == Qt::Key_G && Keycount ==1)
+       {
+           double anglePos = 0;
+           while(anglePos <= 90)
+           {
+               int cmd = anglePos * HEAD_PAN_CIRCLE_CNT /360;
+               int time = ui->lineEditHeadCtrlTime->text().toInt();
+               ctrlMode = MOTORPOSCTRL;
+               // here we use position time control
+               robotMotorTimeControl(ctrlMode,4,cmd,time);
+               anglePos  += 1;
+           }
+           Keycount +=1;
+           return true;
 
-//       }
-//       else if (ke->key() == Qt::Key_D && Keycount ==1)
-//       {
-//           double anglePos = 0;
-//           while(anglePos <= 90)
-//           {
-//               int cmd = anglePos * HEAD_PAN_CIRCLE_CNT /360;
-//               int time = ui->lineEditHeadCtrlTime->text().toInt();
-//               ctrlMode = MOTORPOSCTRL;
-//               // here we use position time control
-//               robotMotorTimeControl(ctrlMode,4,-cmd,time);
-//               anglePos  += 1;
-//           }
-//           Keycount +=1;
-//           return true;
-//       }
-//       else if (ke->key() == Qt::Key_Left && Keycount ==1)
-//       {
-//           sendLeftTurnCmd();
-//           Keycount +=1;
-//           return true;
-//       }
-//       else if (ke->key() == Qt::Key_Right && Keycount == 1)
-//       {
-//           sendRightTurnCmd();
-//           Keycount +=1;
-//           return true;
-//       }
-//       else if (ke->key() == Qt::Key_Up && Keycount ==1)
-//       {
-//           sendForwardCmd();
-//           Keycount +=1;
-//           return true;
-//       }
-//       else if (ke->key() == Qt::Key_Down && Keycount == 1)
-//       {
-//           sendBackwardCmd();
-//           Keycount +=1;
-//           return true;
-//       }
-//       else if ((ke->key() == Qt::Key_Left || ke->key() == Qt::Key_Right || ke->key() == Qt::Key_Up || ke->key() == Qt::Key_Down) && Keycount ==2)
-//       {
-//           sendStopCmd();
-//           Keycount =1;
-//           return true;
-//       }
-//       else if ((ke->key() == Qt::Key_T || ke->key() == Qt::Key_V || ke->key() == Qt::Key_H || ke->key() == Qt::Key_D) && Keycount ==2)
-//       {
-//           sendHeadStopCmd();
-//           Keycount =1;
-//           return true;
-//       }
-//       else
-//           return QMainWindow::event(event);
-//   }
-//   else
-//   return QMainWindow::event(event);
-//}
+       }
+       else if (ke->key() == Qt::Key_F && Keycount ==1)
+       {
+           double anglePos = 0;
+           while(anglePos <= 90)
+           {
+               int cmd = anglePos * HEAD_PAN_CIRCLE_CNT /360;
+               int time = ui->lineEditHeadCtrlTime->text().toInt();
+               ctrlMode = MOTORPOSCTRL;
+               // here we use position time control
+               robotMotorTimeControl(ctrlMode,4,-cmd,time);
+               anglePos  += 1;
+           }
+           Keycount +=1;
+           return true;
+       }
+       else if (ke->key() == Qt::Key_Left && Keycount ==1)
+       {
+           sendLeftTurnCmd();
+           Keycount +=1;
+           return true;
+       }
+       else if (ke->key() == Qt::Key_Right && Keycount == 1)
+       {
+           sendRightTurnCmd();
+           Keycount +=1;
+           return true;
+       }
+       else if (ke->key() == Qt::Key_Up && Keycount ==1)
+       {
+           sendForwardCmd();
+           Keycount +=1;
+           return true;
+       }
+       else if (ke->key() == Qt::Key_Down && Keycount == 1)
+       {
+           sendBackwardCmd();
+           Keycount +=1;
+           return true;
+       }
+       else if (ke->key() == Qt::Key_K && Keycount == 1)
+       {
+           ui->checkBoxKeyboardCtr->setEnabled(true);
+           return true;
+           Keycount += 1;
+       }
+       else if ((ke->key() == Qt::Key_Left || ke->key() == Qt::Key_Right || ke->key() == Qt::Key_Up || ke->key() == Qt::Key_Down) && Keycount ==2)
+       {
+           sendStopCmd();
+           Keycount =1;
+           return true;
+       }
+       else if ((ke->key() == Qt::Key_H || ke->key() == Qt::Key_J || ke->key() == Qt::Key_G || ke->key() == Qt::Key_F) && Keycount ==2)
+       {
+           sendHeadStopCmd();
+           Keycount =1;
+           return true;
+       }
+       else if (ke->key() == Qt::Key_K && Keycount == 2)
+       {
+           ui->checkBoxKeyboardCtr->setEnabled(false);
+           Keycount =1;
+           return true;
+       }
+       else if (ke->key() == Qt::Key_R)
+       {
+           resetHeadPan();
+           resetHeadTilt();
+           Keycount=1;
+           return true;
+       }
+       else
+           return QMainWindow::event(event);
+   }
+   else
+   return QMainWindow::event(event);
+}
 
 void MainWindow::robotEstVel()
 {
@@ -2986,95 +3002,95 @@ void MainWindow::p2pCmdSend(double a, double b, double c, double d, int e, int f
     p2pStatus = P2PGo;
 }
 
-void MainWindow::keyPressEvent(QKeyEvent *ke)
-{
-    if (ke->key() == Qt::Key_T)
-    {
-        double anglePos = 0;
-        while (anglePos <= 40)
-        {
-            int cmd = anglePos * HEAD_TILT_CIRCLE_CNT /360;
-            int time = ui->lineEditHeadCtrlTime->text().toInt();
-            ctrlMode = MOTORPOSCTRL;
-            // here we use position time control
-            robotMotorTimeControl(ctrlMode,3,cmd,time);
-            anglePos += 1;
-        }
-    }
-    else if (ke->key() == Qt::Key_V)
-    {
-        double anglePos = 0;
-        while (anglePos <= 40)
-        {
-            int cmd = anglePos * HEAD_TILT_CIRCLE_CNT /360;
-            int time = ui->lineEditHeadCtrlTime->text().toInt();
-            ctrlMode = MOTORPOSCTRL;
-            // here we use position time control
-            robotMotorTimeControl(ctrlMode,3,-cmd,time);
-            anglePos += 1;
-        }
+//void MainWindow::keyPressEvent(QKeyEvent *ke)
+//{
+//    if (ke->key() == Qt::Key_T)
+//    {
+//        double anglePos = 0;
+//        while (anglePos <= 40)
+//        {
+//            int cmd = anglePos * HEAD_TILT_CIRCLE_CNT /360;
+//            int time = ui->lineEditHeadCtrlTime->text().toInt();
+//            ctrlMode = MOTORPOSCTRL;
+//            // here we use position time control
+//            robotMotorTimeControl(ctrlMode,3,cmd,time);
+//            anglePos += 1;
+//        }
+//    }
+//    else if (ke->key() == Qt::Key_V)
+//    {
+//        double anglePos = 0;
+//        while (anglePos <= 40)
+//        {
+//            int cmd = anglePos * HEAD_TILT_CIRCLE_CNT /360;
+//            int time = ui->lineEditHeadCtrlTime->text().toInt();
+//            ctrlMode = MOTORPOSCTRL;
+//            // here we use position time control
+//            robotMotorTimeControl(ctrlMode,3,-cmd,time);
+//            anglePos += 1;
+//        }
 
-    }
-    else if (ke->key() == Qt::Key_H)
-    {
-        double anglePos = 0;
-        while(anglePos <= 90)
-        {
-            int cmd = anglePos * HEAD_PAN_CIRCLE_CNT /360;
-            int time = ui->lineEditHeadCtrlTime->text().toInt();
-            ctrlMode = MOTORPOSCTRL;
-            // here we use position time control
-            robotMotorTimeControl(ctrlMode,4,cmd,time);
-            anglePos  += 1;
-        }
+//    }
+//    else if (ke->key() == Qt::Key_H)
+//    {
+//        double anglePos = 0;
+//        while(anglePos <= 90)
+//        {
+//            int cmd = anglePos * HEAD_PAN_CIRCLE_CNT /360;
+//            int time = ui->lineEditHeadCtrlTime->text().toInt();
+//            ctrlMode = MOTORPOSCTRL;
+//            // here we use position time control
+//            robotMotorTimeControl(ctrlMode,4,cmd,time);
+//            anglePos  += 1;
+//        }
 
-    }
-    else if (ke->key() == Qt::Key_D)
-    {
-        double anglePos = 0;
-        while(anglePos <= 90)
-        {
-            int cmd = anglePos * HEAD_PAN_CIRCLE_CNT /360;
-            int time = ui->lineEditHeadCtrlTime->text().toInt();
-            ctrlMode = MOTORPOSCTRL;
-            // here we use position time control
-            robotMotorTimeControl(ctrlMode,4,-cmd,time);
-            anglePos  += 1;
-        }
-    }
-    else if (ke->key() == Qt::Key_Left)
-    {
-        sendLeftTurnCmd();
-    }
-    else if (ke->key() == Qt::Key_Right)
-    {
-        sendRightTurnCmd();
-    }
-    else if (ke->key() == Qt::Key_Up)
-    {
-        sendForwardCmd();
-    }
-    else if (ke->key() == Qt::Key_Down)
-    {
-        sendBackwardCmd();
-    }
-    else
-        QMainWindow::keyPressEvent(ke);
-}
+//    }
+//    else if (ke->key() == Qt::Key_D)
+//    {
+//        double anglePos = 0;
+//        while(anglePos <= 90)
+//        {
+//            int cmd = anglePos * HEAD_PAN_CIRCLE_CNT /360;
+//            int time = ui->lineEditHeadCtrlTime->text().toInt();
+//            ctrlMode = MOTORPOSCTRL;
+//            // here we use position time control
+//            robotMotorTimeControl(ctrlMode,4,-cmd,time);
+//            anglePos  += 1;
+//        }
+//    }
+//    else if (ke->key() == Qt::Key_Left)
+//    {
+//        sendLeftTurnCmd();
+//    }
+//    else if (ke->key() == Qt::Key_Right)
+//    {
+//        sendRightTurnCmd();
+//    }
+//    else if (ke->key() == Qt::Key_Up)
+//    {
+//        sendForwardCmd();
+//    }
+//    else if (ke->key() == Qt::Key_Down)
+//    {
+//        sendBackwardCmd();
+//    }
+//    else
+//        QMainWindow::keyPressEvent(ke);
+//}
 
-void MainWindow::keyReleaseEvent(QKeyEvent *ke)
-{
-    if (ke->key() == Qt::Key_Left || ke->key() == Qt::Key_Right || ke->key() == Qt::Key_Up || ke->key() == Qt::Key_Down)
-    {
-        sendStopCmd();
-    }
-    else if (ke->key() == Qt::Key_T || ke->key() == Qt::Key_V || ke->key() == Qt::Key_H || ke->key() == Qt::Key_D)
-    {
-        sendHeadStopCmd();
-    }
-    else
-        QMainWindow::keyReleaseEvent(ke);
-}
+//void MainWindow::keyReleaseEvent(QKeyEvent *ke)
+//{
+//    if (ke->key() == Qt::Key_Left || ke->key() == Qt::Key_Right || ke->key() == Qt::Key_Up || ke->key() == Qt::Key_Down)
+//    {
+//        sendStopCmd();
+//    }
+//    else if (ke->key() == Qt::Key_T || ke->key() == Qt::Key_V || ke->key() == Qt::Key_H || ke->key() == Qt::Key_D)
+//    {
+//        sendHeadStopCmd();
+//    }
+//    else
+//        QMainWindow::keyReleaseEvent(ke);
+//}
 
 
 //calvin ends

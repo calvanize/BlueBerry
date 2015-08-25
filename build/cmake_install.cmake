@@ -120,6 +120,7 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   INCLUDE("/home/drrobot1/github/BlueBerry/build/drrobot_clinicrobot/cmake_install.cmake")
   INCLUDE("/home/drrobot1/github/BlueBerry/build/hokuyo_test/cmake_install.cmake")
   INCLUDE("/home/drrobot1/github/BlueBerry/build/robot_setup_tf/cmake_install.cmake")
+  INCLUDE("/home/drrobot1/github/BlueBerry/build/blueberry2_2dnav/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

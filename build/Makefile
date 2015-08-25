@@ -1020,6 +1020,32 @@ tf_broadcaster/fast:
 	$(MAKE) -f robot_setup_tf/CMakeFiles/tf_broadcaster.dir/build.make robot_setup_tf/CMakeFiles/tf_broadcaster.dir/build
 .PHONY : tf_broadcaster/fast
 
+#=============================================================================
+# Target rules for targets named hokuyo_node_gencfg
+
+# Build rule for target.
+hokuyo_node_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hokuyo_node_gencfg
+.PHONY : hokuyo_node_gencfg
+
+# fast build rule for target.
+hokuyo_node_gencfg/fast:
+	$(MAKE) -f blueberry2_2dnav/CMakeFiles/hokuyo_node_gencfg.dir/build.make blueberry2_2dnav/CMakeFiles/hokuyo_node_gencfg.dir/build
+.PHONY : hokuyo_node_gencfg/fast
+
+#=============================================================================
+# Target rules for targets named move_base_gencfg
+
+# Build rule for target.
+move_base_gencfg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 move_base_gencfg
+.PHONY : move_base_gencfg
+
+# fast build rule for target.
+move_base_gencfg/fast:
+	$(MAKE) -f blueberry2_2dnav/CMakeFiles/move_base_gencfg.dir/build.make blueberry2_2dnav/CMakeFiles/move_base_gencfg.dir/build
+.PHONY : move_base_gencfg/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1100,6 +1126,8 @@ help:
 	@echo "... dynamic_reconfigure_generate_messages_lisp"
 	@echo "... dynamic_reconfigure_generate_messages_py"
 	@echo "... tf_broadcaster"
+	@echo "... hokuyo_node_gencfg"
+	@echo "... move_base_gencfg"
 .PHONY : help
 
 

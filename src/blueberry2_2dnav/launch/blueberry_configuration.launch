@@ -1,0 +1,16 @@
+<launch>
+  <node pkg="hokuyo_node" type="hokuyo_node" name="hokuyo" output="screen">
+    <param name="frame_id" type="str" value="/laser"/> 
+    <param name="calibrate_time" type="bool" value="false"/> 
+    <param name="port" type="string" value="/dev/ttyACM1"/>
+    <param name="sensor_param" value="param_value" />
+  </node>
+
+  <node pkg="drrobot_clinicrobot" type="drrobot_clinicrobot_node" name="drrobot_clinicrobot_node" output="screen">
+    <!--param name="odom_param" value="param_value" /-->
+  </node>
+
+  <node pkg="robot_setup_tf" type="tf_broadcaster" name="tf_broadcaster" output="screen">
+    <!--param name="transform_configuration_param" value="param_value" /-->
+  </node>
+</launch>
