@@ -151,6 +151,7 @@ serverFace = new QTcpServer(this);
    setWindowIcon(QIcon(":/images/icon.png"));
 
     QObject::connect(&qnode, SIGNAL(rosShutdown()), this, SLOT(close()));
+    grabKeyboard();
 
 }
 
