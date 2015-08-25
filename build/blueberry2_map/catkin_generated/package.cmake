@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "blueberry2_map")
+set(blueberry2_map_MAINTAINER "drrobot2 <drrobot2@todo.todo>")
+set(blueberry2_map_DEPRECATED "")
+set(blueberry2_map_VERSION "0.0.0")
+set(blueberry2_map_BUILD_DEPENDS "diagnostic_updater" "driver_base" "dynamic_reconfigure" "rosconsole" "roscpp" "self_test" "sensor_msgs")
+set(blueberry2_map_RUN_DEPENDS "diagnostic_updater" "driver_base" "dynamic_reconfigure" "rosconsole" "roscpp" "self_test" "sensor_msgs")
+set(blueberry2_map_BUILDTOOL_DEPENDS "catkin")

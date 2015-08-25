@@ -1,2 +1,2 @@
-blueberry2_2dnav:drrobot_clinicrobot:hokuyo_test:robot_setup_tf
+blueberry2_2dnav:blueberry2_map:drrobot_clinicrobot:hokuyo_test:robot_setup_tf
 -DCATKIN_DEVEL_PREFIX=/home/drrobot1/github/BlueBerry/devel -DCMAKE_INSTALL_PREFIX=/home/drrobot1/github/BlueBerry/install -G Unix Makefiles

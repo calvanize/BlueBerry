@@ -6,6 +6,7 @@
 # testing this directory and lists subdirectories to be tested as well.
 SUBDIRS(gtest)
 SUBDIRS(drrobot_clinicrobot)
+SUBDIRS(blueberry2_map)
 SUBDIRS(hokuyo_test)
 SUBDIRS(robot_setup_tf)
 SUBDIRS(blueberry2_2dnav)

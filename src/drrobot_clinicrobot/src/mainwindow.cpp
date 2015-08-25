@@ -2914,7 +2914,7 @@ bool MainWindow::event(QEvent *event)
        }
        else if (ke->key() == Qt::Key_K && Keycount == 1)
        {
-           ui->checkBoxKeyboardCtr->setEnabled(true);
+           ui->checkBoxKeyboardCtr->click();
            return true;
            Keycount += 1;
        }
@@ -2932,7 +2932,8 @@ bool MainWindow::event(QEvent *event)
        }
        else if (ke->key() == Qt::Key_K && Keycount == 2)
        {
-           ui->checkBoxKeyboardCtr->setEnabled(false);
+           ui->checkBoxKeyboardCtr->click();
+           keyboardMotionCtrl(false);
            Keycount =1;
            return true;
        }
@@ -2943,6 +2944,26 @@ bool MainWindow::event(QEvent *event)
            Keycount=1;
            return true;
        }
+       else if(ke->key() == Qt::Key_P)
+       {
+           ui->checkBoxStartROSPublish->click();
+           ui->checkBoxStartROSReceive->click();
+           return true;
+       }
+       else if(ke->key() == Qt::Key_O)
+       {
+           ui->pushButtonMotionConnect->click();
+           ui->pushButtonIndoorGPSConnect->click();
+           ui->pushButtonChargerConnect->click();
+           ui->pushButtonLaserConnect->click();
+           return true;
+       }
+       else if(ke->key() == Qt::Key_L)
+       {
+           ui->pushButtonPatrol->click();
+           return true;
+       }
+
        else
            return QMainWindow::event(event);
    }
