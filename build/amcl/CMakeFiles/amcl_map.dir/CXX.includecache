@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/drrobot1/github/BlueBerry/src/amcl/include/amcl/map/map.h
+stdint.h
+-
+
+/home/drrobot1/github/BlueBerry/src/amcl/src/amcl/map/map_cspace.cpp
+queue
+-
+math.h
+-
+stdlib.h
+-
+string.h
+-
+map.h
+/home/drrobot1/github/BlueBerry/src/amcl/src/amcl/map/map.h
+

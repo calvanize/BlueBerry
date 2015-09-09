@@ -7,7 +7,7 @@ import struct
 import std_msgs.msg
 
 class MotorInfo(genpy.Message):
-  _md5sum = "9e31f4f22948e8b2ee140c8cc701e042"
+  _md5sum = "e7fb0ddf90ddf34c6da4b4daabc169c3"
   _type = "drrobot_clinicrobot/MotorInfo"
   _has_header = True #flag to mark the presence of a Header object
   _full_text = """# motor sensor data message from DrRobot Robot.
@@ -22,6 +22,10 @@ uint32 encoder_dir	# encoder direction
 
 float32 motor_current	# motor current
 uint32 motor_pwm	# output PWM value, only for Jaguar series robot
+
+# calvin added this
+
+float32 anglePos        # for head tilt, pan, and laser drive
 
 ================================================================================
 MSG: std_msgs/Header
@@ -42,8 +46,8 @@ time stamp
 string frame_id
 
 """
-  __slots__ = ['header','robot_type','encoder_pos','encoder_vel','encoder_dir','motor_current','motor_pwm']
-  _slot_types = ['std_msgs/Header','string','uint32','uint32','uint32','float32','uint32']
+  __slots__ = ['header','robot_type','encoder_pos','encoder_vel','encoder_dir','motor_current','motor_pwm','anglePos']
+  _slot_types = ['std_msgs/Header','string','uint32','uint32','uint32','float32','uint32','float32']
 
   def __init__(self, *args, **kwds):
     """
@@ -53,7 +57,7 @@ string frame_id
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       header,robot_type,encoder_pos,encoder_vel,encoder_dir,motor_current,motor_pwm
+       header,robot_type,encoder_pos,encoder_vel,encoder_dir,motor_current,motor_pwm,anglePos
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -76,6 +80,8 @@ string frame_id
         self.motor_current = 0.
       if self.motor_pwm is None:
         self.motor_pwm = 0
+      if self.anglePos is None:
+        self.anglePos = 0.
     else:
       self.header = std_msgs.msg.Header()
       self.robot_type = ''
@@ -84,6 +90,7 @@ string frame_id
       self.encoder_dir = 0
       self.motor_current = 0.
       self.motor_pwm = 0
+      self.anglePos = 0.
 
   def _get_types(self):
     """
@@ -118,7 +125,7 @@ string frame_id
       else:
         buff.write(struct.pack('<I%ss'%length, length, _x))
       _x = self
-      buff.write(_struct_3IfI.pack(_x.encoder_pos, _x.encoder_vel, _x.encoder_dir, _x.motor_current, _x.motor_pwm))
+      buff.write(_struct_3IfIf.pack(_x.encoder_pos, _x.encoder_vel, _x.encoder_dir, _x.motor_current, _x.motor_pwm, _x.anglePos))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(_x))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(_x))))
 
@@ -155,8 +162,8 @@ string frame_id
         self.robot_type = str[start:end]
       _x = self
       start = end
-      end += 20
-      (_x.encoder_pos, _x.encoder_vel, _x.encoder_dir, _x.motor_current, _x.motor_pwm,) = _struct_3IfI.unpack(str[start:end])
+      end += 24
+      (_x.encoder_pos, _x.encoder_vel, _x.encoder_dir, _x.motor_current, _x.motor_pwm, _x.anglePos,) = _struct_3IfIf.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -190,7 +197,7 @@ string frame_id
       else:
         buff.write(struct.pack('<I%ss'%length, length, _x))
       _x = self
-      buff.write(_struct_3IfI.pack(_x.encoder_pos, _x.encoder_vel, _x.encoder_dir, _x.motor_current, _x.motor_pwm))
+      buff.write(_struct_3IfIf.pack(_x.encoder_pos, _x.encoder_vel, _x.encoder_dir, _x.motor_current, _x.motor_pwm, _x.anglePos))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(_x))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(_x))))
 
@@ -228,12 +235,12 @@ string frame_id
         self.robot_type = str[start:end]
       _x = self
       start = end
-      end += 20
-      (_x.encoder_pos, _x.encoder_vel, _x.encoder_dir, _x.motor_current, _x.motor_pwm,) = _struct_3IfI.unpack(str[start:end])
+      end += 24
+      (_x.encoder_pos, _x.encoder_vel, _x.encoder_dir, _x.motor_current, _x.motor_pwm, _x.anglePos,) = _struct_3IfIf.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = genpy.struct_I
 _struct_3I = struct.Struct("<3I")
-_struct_3IfI = struct.Struct("<3IfI")
+_struct_3IfIf = struct.Struct("<3IfIf")

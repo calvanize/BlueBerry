@@ -10,3 +10,7 @@ uint32 encoder_dir	# encoder direction
 
 float32 motor_current	# motor current
 uint32 motor_pwm	# output PWM value, only for Jaguar series robot
+
+# calvin added this
+
+float32 anglePos        # for head tilt, pan, and laser drive

@@ -113,12 +113,12 @@ struct MD5Sum< ::drrobot_clinicrobot::MotorInfoArray_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "64d8eb9826ec2f78779f54df29bcc931";
+    return "da88e4c94958ccb74f3a5f5af357e384";
   }
 
   static const char* value(const ::drrobot_clinicrobot::MotorInfoArray_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x64d8eb9826ec2f78ULL;
-  static const uint64_t static_value2 = 0x779f54df29bcc931ULL;
+  static const uint64_t static_value1 = 0xda88e4c94958ccb7ULL;
+  static const uint64_t static_value2 = 0x4f3a5f5af357e384ULL;
 };
 
 template<class ContainerAllocator>
@@ -154,6 +154,10 @@ uint32 encoder_dir	# encoder direction\n\
 \n\
 float32 motor_current	# motor current\n\
 uint32 motor_pwm	# output PWM value, only for Jaguar series robot\n\
+\n\
+# calvin added this\n\
+\n\
+float32 anglePos        # for head tilt, pan, and laser drive\n\
 \n\
 ================================================================================\n\
 MSG: std_msgs/Header\n\

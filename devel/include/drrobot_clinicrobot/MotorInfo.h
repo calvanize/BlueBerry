@@ -31,7 +31,8 @@ struct MotorInfo_
     , encoder_vel(0)
     , encoder_dir(0)
     , motor_current(0.0)
-    , motor_pwm(0)  {
+    , motor_pwm(0)
+    , anglePos(0.0)  {
     }
   MotorInfo_(const ContainerAllocator& _alloc)
     : header(_alloc)
@@ -40,7 +41,8 @@ struct MotorInfo_
     , encoder_vel(0)
     , encoder_dir(0)
     , motor_current(0.0)
-    , motor_pwm(0)  {
+    , motor_pwm(0)
+    , anglePos(0.0)  {
     }
 
 
@@ -65,6 +67,9 @@ struct MotorInfo_
 
    typedef uint32_t _motor_pwm_type;
   _motor_pwm_type motor_pwm;
+
+   typedef float _anglePos_type;
+  _anglePos_type anglePos;
 
 
 
@@ -143,12 +148,12 @@ struct MD5Sum< ::drrobot_clinicrobot::MotorInfo_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "9e31f4f22948e8b2ee140c8cc701e042";
+    return "e7fb0ddf90ddf34c6da4b4daabc169c3";
   }
 
   static const char* value(const ::drrobot_clinicrobot::MotorInfo_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x9e31f4f22948e8b2ULL;
-  static const uint64_t static_value2 = 0xee140c8cc701e042ULL;
+  static const uint64_t static_value1 = 0xe7fb0ddf90ddf34cULL;
+  static const uint64_t static_value2 = 0x6da4b4daabc169c3ULL;
 };
 
 template<class ContainerAllocator>
@@ -179,6 +184,10 @@ uint32 encoder_dir	# encoder direction\n\
 \n\
 float32 motor_current	# motor current\n\
 uint32 motor_pwm	# output PWM value, only for Jaguar series robot\n\
+\n\
+# calvin added this\n\
+\n\
+float32 anglePos        # for head tilt, pan, and laser drive\n\
 \n\
 ================================================================================\n\
 MSG: std_msgs/Header\n\
@@ -222,6 +231,7 @@ namespace serialization
       stream.next(m.encoder_dir);
       stream.next(m.motor_current);
       stream.next(m.motor_pwm);
+      stream.next(m.anglePos);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER;
@@ -255,6 +265,8 @@ struct Printer< ::drrobot_clinicrobot::MotorInfo_<ContainerAllocator> >
     Printer<float>::stream(s, indent + "  ", v.motor_current);
     s << indent << "motor_pwm: ";
     Printer<uint32_t>::stream(s, indent + "  ", v.motor_pwm);
+    s << indent << "anglePos: ";
+    Printer<float>::stream(s, indent + "  ", v.anglePos);
   }
 };
 

@@ -13,4 +13,6 @@
           MOTOR_CURRENT
           MOTOR_PWM-VAL
           MOTOR_PWM
+          ANGLEPOS-VAL
+          ANGLEPOS
 ))

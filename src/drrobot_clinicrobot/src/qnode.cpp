@@ -111,6 +111,7 @@ void QNode::publisherMotorData(MotorData motorData[],int len)
       motorInfoArray.motorInfos[i].encoder_pos = motorData[i].encoderPos;
       motorInfoArray.motorInfos[i].encoder_vel = motorData[i].encoderVel;
       motorInfoArray.motorInfos[i].motor_pwm = motorData[i].pwmValue;
+      motorInfoArray.motorInfos[i].anglePos = motorData[i].anglePos;
 	}
 
    // ROS_INFO("publish motor info array");

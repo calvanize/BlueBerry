@@ -5,6 +5,7 @@
 #include <sstream>
 #include <drrobot_clinicrobot/LaserDriveData.h>
 #include <drrobot_clinicrobot/RobotPosition.h>
+#include <drrobot_clinicrobot/MotorInfoArray.h>
 #include <geometry_msgs/Quaternion.h>
 #include <geometry_msgs/TransformStamped.h>
 //#include  "/home/drrobot1/github/BlueBerry/src/drrobot_clinicrobot/include/drrobot_clinicrobot/drrobotprotocol.hpp"
@@ -21,11 +22,12 @@ void setlasertf(const drrobot_clinicrobot::LaserDriveDataConstPtr laserData)
     tf::TransformBroadcaster broadcaster_IRsensor[IR_NUM];
     tf::TransformBroadcaster broadcaster_USsensor[US_NUM];
 
+
     static tf::TransformBroadcaster broadcaster_laser;
     tf::Transform transform;
     transform.setOrigin( tf::Vector3(laserData->offset_x, laserData->offset_y, laserData->offset_z) );
     tf::Quaternion q;
-    q.setRPY(0, laserData->tilt_angle, 0);
+    q.setRPY(0, -laserData->tilt_angle, 0);
     transform.setRotation(q);
 
     tf::StampedTransform a(transform, ros::Time::now(), "base_link", "laser");
@@ -113,6 +115,33 @@ void setOdomtf(const drrobot_clinicrobot::RobotPositionConstPtr robotPositionDat
      odom_broadcaster.sendTransform(transform);
 }
 
+void Kinect(const drrobot_clinicrobot::MotorInfoArrayConstPtr motorData)
+{
+    tf::TransformBroadcaster broadcaster_camera;
+    tf::TransformBroadcaster broadcaster_camera1;
+    tf::TransformBroadcaster broadcaster_neck;
+
+    tf::Transform transform;
+    transform.setOrigin( tf::Vector3(0, 0, 1.65));
+    tf::Quaternion q;
+    q.setRPY(0, -motorData->motorInfos[2].anglePos, -motorData->motorInfos[3].anglePos);
+    transform.setRotation(q);
+
+
+
+    broadcaster_neck.sendTransform(
+                tf::StampedTransform(transform, ros::Time::now(), "base_link", "neck"));
+    broadcaster_camera.sendTransform(
+                tf::StampedTransform(
+                    tf::Transform(tf::Quaternion(0, 0, 0, 1), tf::Vector3(0.05, 0, 0.05)),
+                    ros::Time::now(), "neck", "Kinect1"));
+    broadcaster_camera1.sendTransform(
+                tf::StampedTransform(
+                    tf::Transform(tf::Quaternion(0, 0, 0, 1), tf::Vector3(-0.05, 0, 0.05)),
+                    ros::Time::now(), "neck", "Kinect2"));
+
+}
+
 int main(int argc, char** argv){
   ros::init(argc, argv, "robot_tf_publisher");
   ros::NodeHandle n;
@@ -126,6 +155,7 @@ int main(int argc, char** argv){
 
       ros::Subscriber laser_tf = n.subscribe("drrobot_clinicrobot_laserdrivedata",1000, setlasertf);
       ros::Subscriber Odom = n.subscribe("drrobot_clinicrobot_robotposition",1000, setOdomtf);
+      ros::Subscriber motor_sensor = n.subscribe("drrobot_clinicrobot_motor_sensor", 1000, Kinect);
 
 
       ros::spin();

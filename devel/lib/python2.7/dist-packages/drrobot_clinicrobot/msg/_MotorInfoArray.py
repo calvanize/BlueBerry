@@ -8,7 +8,7 @@ import drrobot_clinicrobot.msg
 import std_msgs.msg
 
 class MotorInfoArray(genpy.Message):
-  _md5sum = "64d8eb9826ec2f78779f54df29bcc931"
+  _md5sum = "da88e4c94958ccb74f3a5f5af357e384"
   _type = "drrobot_clinicrobot/MotorInfoArray"
   _has_header = False #flag to mark the presence of a Header object
   _full_text = """#this message will be used for motor sensor
@@ -28,6 +28,10 @@ uint32 encoder_dir	# encoder direction
 
 float32 motor_current	# motor current
 uint32 motor_pwm	# output PWM value, only for Jaguar series robot
+
+# calvin added this
+
+float32 anglePos        # for head tilt, pan, and laser drive
 
 ================================================================================
 MSG: std_msgs/Header
@@ -112,7 +116,7 @@ string frame_id
         else:
           buff.write(struct.pack('<I%ss'%length, length, _x))
         _x = val1
-        buff.write(_struct_3IfI.pack(_x.encoder_pos, _x.encoder_vel, _x.encoder_dir, _x.motor_current, _x.motor_pwm))
+        buff.write(_struct_3IfIf.pack(_x.encoder_pos, _x.encoder_vel, _x.encoder_dir, _x.motor_current, _x.motor_pwm, _x.anglePos))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(_x))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(_x))))
 
@@ -160,8 +164,8 @@ string frame_id
           val1.robot_type = str[start:end]
         _x = val1
         start = end
-        end += 20
-        (_x.encoder_pos, _x.encoder_vel, _x.encoder_dir, _x.motor_current, _x.motor_pwm,) = _struct_3IfI.unpack(str[start:end])
+        end += 24
+        (_x.encoder_pos, _x.encoder_vel, _x.encoder_dir, _x.motor_current, _x.motor_pwm, _x.anglePos,) = _struct_3IfIf.unpack(str[start:end])
         self.motorInfos.append(val1)
       return self
     except struct.error as e:
@@ -202,7 +206,7 @@ string frame_id
         else:
           buff.write(struct.pack('<I%ss'%length, length, _x))
         _x = val1
-        buff.write(_struct_3IfI.pack(_x.encoder_pos, _x.encoder_vel, _x.encoder_dir, _x.motor_current, _x.motor_pwm))
+        buff.write(_struct_3IfIf.pack(_x.encoder_pos, _x.encoder_vel, _x.encoder_dir, _x.motor_current, _x.motor_pwm, _x.anglePos))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(_x))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(_x))))
 
@@ -251,13 +255,13 @@ string frame_id
           val1.robot_type = str[start:end]
         _x = val1
         start = end
-        end += 20
-        (_x.encoder_pos, _x.encoder_vel, _x.encoder_dir, _x.motor_current, _x.motor_pwm,) = _struct_3IfI.unpack(str[start:end])
+        end += 24
+        (_x.encoder_pos, _x.encoder_vel, _x.encoder_dir, _x.motor_current, _x.motor_pwm, _x.anglePos,) = _struct_3IfIf.unpack(str[start:end])
         self.motorInfos.append(val1)
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = genpy.struct_I
+_struct_3IfIf = struct.Struct("<3IfIf")
 _struct_2I = struct.Struct("<2I")
-_struct_3IfI = struct.Struct("<3IfI")

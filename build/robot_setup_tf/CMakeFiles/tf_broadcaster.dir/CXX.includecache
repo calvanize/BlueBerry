@@ -21,6 +21,8 @@ drrobot_clinicrobot/LaserDriveData.h
 -
 drrobot_clinicrobot/RobotPosition.h
 -
+drrobot_clinicrobot/MotorInfoArray.h
+-
 geometry_msgs/Quaternion.h
 -
 geometry_msgs/TransformStamped.h

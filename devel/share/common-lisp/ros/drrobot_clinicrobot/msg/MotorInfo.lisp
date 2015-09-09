@@ -41,7 +41,12 @@
     :reader motor_pwm
     :initarg :motor_pwm
     :type cl:integer
-    :initform 0))
+    :initform 0)
+   (anglePos
+    :reader anglePos
+    :initarg :anglePos
+    :type cl:float
+    :initform 0.0))
 )
 
 (cl:defclass MotorInfo (<MotorInfo>)
@@ -86,6 +91,11 @@
 (cl:defmethod motor_pwm-val ((m <MotorInfo>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader drrobot_clinicrobot-msg:motor_pwm-val is deprecated.  Use drrobot_clinicrobot-msg:motor_pwm instead.")
   (motor_pwm m))
+
+(cl:ensure-generic-function 'anglePos-val :lambda-list '(m))
+(cl:defmethod anglePos-val ((m <MotorInfo>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader drrobot_clinicrobot-msg:anglePos-val is deprecated.  Use drrobot_clinicrobot-msg:anglePos instead.")
+  (anglePos m))
 (cl:defmethod roslisp-msg-protocol:serialize ((msg <MotorInfo>) ostream)
   "Serializes a message object of type '<MotorInfo>"
   (roslisp-msg-protocol:serialize (cl:slot-value msg 'header) ostream)
@@ -116,6 +126,11 @@
   (cl:write-byte (cl:ldb (cl:byte 8 8) (cl:slot-value msg 'motor_pwm)) ostream)
   (cl:write-byte (cl:ldb (cl:byte 8 16) (cl:slot-value msg 'motor_pwm)) ostream)
   (cl:write-byte (cl:ldb (cl:byte 8 24) (cl:slot-value msg 'motor_pwm)) ostream)
+  (cl:let ((bits (roslisp-utils:encode-single-float-bits (cl:slot-value msg 'anglePos))))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) bits) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) bits) ostream))
 )
 (cl:defmethod roslisp-msg-protocol:deserialize ((msg <MotorInfo>) istream)
   "Deserializes a message object of type '<MotorInfo>"
@@ -150,6 +165,12 @@
     (cl:setf (cl:ldb (cl:byte 8 8) (cl:slot-value msg 'motor_pwm)) (cl:read-byte istream))
     (cl:setf (cl:ldb (cl:byte 8 16) (cl:slot-value msg 'motor_pwm)) (cl:read-byte istream))
     (cl:setf (cl:ldb (cl:byte 8 24) (cl:slot-value msg 'motor_pwm)) (cl:read-byte istream))
+    (cl:let ((bits 0))
+      (cl:setf (cl:ldb (cl:byte 8 0) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 8) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) bits) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) bits) (cl:read-byte istream))
+    (cl:setf (cl:slot-value msg 'anglePos) (roslisp-utils:decode-single-float-bits bits)))
   msg
 )
 (cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql '<MotorInfo>)))
@@ -160,20 +181,21 @@
   "drrobot_clinicrobot/MotorInfo")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<MotorInfo>)))
   "Returns md5sum for a message object of type '<MotorInfo>"
-  "9e31f4f22948e8b2ee140c8cc701e042")
+  "e7fb0ddf90ddf34c6da4b4daabc169c3")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'MotorInfo)))
   "Returns md5sum for a message object of type 'MotorInfo"
-  "9e31f4f22948e8b2ee140c8cc701e042")
+  "e7fb0ddf90ddf34c6da4b4daabc169c3")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<MotorInfo>)))
   "Returns full string definition for message of type '<MotorInfo>"
-  (cl:format cl:nil "# motor sensor data message from DrRobot Robot.~%~%Header header    	# timestamp in the header is the time the driver~%		 	# returned the battery/power reading~%string robot_type	# robot type, I90 series, sentinel3 or Jaguar Power/Motion~%~%uint32 encoder_pos	# encoder positon count~%uint32 encoder_vel	# encoder velocity value~%uint32 encoder_dir	# encoder direction~%~%float32 motor_current	# motor current~%uint32 motor_pwm	# output PWM value, only for Jaguar series robot~%~%================================================================================~%MSG: std_msgs/Header~%# Standard metadata for higher-level stamped data types.~%# This is generally used to communicate timestamped data ~%# in a particular coordinate frame.~%# ~%# sequence ID: consecutively increasing ID ~%uint32 seq~%#Two-integer timestamp that is expressed as:~%# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')~%# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')~%# time-handling sugar is provided by the client library~%time stamp~%#Frame this data is associated with~%# 0: no frame~%# 1: global frame~%string frame_id~%~%~%"))
+  (cl:format cl:nil "# motor sensor data message from DrRobot Robot.~%~%Header header    	# timestamp in the header is the time the driver~%		 	# returned the battery/power reading~%string robot_type	# robot type, I90 series, sentinel3 or Jaguar Power/Motion~%~%uint32 encoder_pos	# encoder positon count~%uint32 encoder_vel	# encoder velocity value~%uint32 encoder_dir	# encoder direction~%~%float32 motor_current	# motor current~%uint32 motor_pwm	# output PWM value, only for Jaguar series robot~%~%# calvin added this~%~%float32 anglePos        # for head tilt, pan, and laser drive~%~%================================================================================~%MSG: std_msgs/Header~%# Standard metadata for higher-level stamped data types.~%# This is generally used to communicate timestamped data ~%# in a particular coordinate frame.~%# ~%# sequence ID: consecutively increasing ID ~%uint32 seq~%#Two-integer timestamp that is expressed as:~%# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')~%# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')~%# time-handling sugar is provided by the client library~%time stamp~%#Frame this data is associated with~%# 0: no frame~%# 1: global frame~%string frame_id~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'MotorInfo)))
   "Returns full string definition for message of type 'MotorInfo"
-  (cl:format cl:nil "# motor sensor data message from DrRobot Robot.~%~%Header header    	# timestamp in the header is the time the driver~%		 	# returned the battery/power reading~%string robot_type	# robot type, I90 series, sentinel3 or Jaguar Power/Motion~%~%uint32 encoder_pos	# encoder positon count~%uint32 encoder_vel	# encoder velocity value~%uint32 encoder_dir	# encoder direction~%~%float32 motor_current	# motor current~%uint32 motor_pwm	# output PWM value, only for Jaguar series robot~%~%================================================================================~%MSG: std_msgs/Header~%# Standard metadata for higher-level stamped data types.~%# This is generally used to communicate timestamped data ~%# in a particular coordinate frame.~%# ~%# sequence ID: consecutively increasing ID ~%uint32 seq~%#Two-integer timestamp that is expressed as:~%# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')~%# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')~%# time-handling sugar is provided by the client library~%time stamp~%#Frame this data is associated with~%# 0: no frame~%# 1: global frame~%string frame_id~%~%~%"))
+  (cl:format cl:nil "# motor sensor data message from DrRobot Robot.~%~%Header header    	# timestamp in the header is the time the driver~%		 	# returned the battery/power reading~%string robot_type	# robot type, I90 series, sentinel3 or Jaguar Power/Motion~%~%uint32 encoder_pos	# encoder positon count~%uint32 encoder_vel	# encoder velocity value~%uint32 encoder_dir	# encoder direction~%~%float32 motor_current	# motor current~%uint32 motor_pwm	# output PWM value, only for Jaguar series robot~%~%# calvin added this~%~%float32 anglePos        # for head tilt, pan, and laser drive~%~%================================================================================~%MSG: std_msgs/Header~%# Standard metadata for higher-level stamped data types.~%# This is generally used to communicate timestamped data ~%# in a particular coordinate frame.~%# ~%# sequence ID: consecutively increasing ID ~%uint32 seq~%#Two-integer timestamp that is expressed as:~%# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')~%# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')~%# time-handling sugar is provided by the client library~%time stamp~%#Frame this data is associated with~%# 0: no frame~%# 1: global frame~%string frame_id~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <MotorInfo>))
   (cl:+ 0
      (roslisp-msg-protocol:serialization-length (cl:slot-value msg 'header))
      4 (cl:length (cl:slot-value msg 'robot_type))
+     4
      4
      4
      4
@@ -190,4 +212,5 @@
     (cl:cons ':encoder_dir (encoder_dir msg))
     (cl:cons ':motor_current (motor_current msg))
     (cl:cons ':motor_pwm (motor_pwm msg))
+    (cl:cons ':anglePos (anglePos msg))
 ))
